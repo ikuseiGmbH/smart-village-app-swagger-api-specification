@@ -2252,7 +2252,7 @@
         "weekday" : {
           "type" : "string",
           "example" : "wednesday",
-          "description" : "specifies a"
+          "description" : "specifies a day e.g. Monday till Sunday or a holiday like Christmas Eve first christmas day. TODO! every day needs a sort order so the frontend knows in which order it should be displayed. Maping sort order -> day could be a fixed table."
         },
         "open" : {
           "type" : "boolean",
@@ -2260,7 +2260,7 @@
           "description" : "Only if the value is true the poi is openeed on the above specified weekday."
         }
       },
-      "description" : "Model for Openingtimedate for"
+      "description" : "Model for Openingtimedate. Specifies a day and the openinghours for the day."
     },
     "Price" : {
       "required" : [ "description" ],
