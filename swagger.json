@@ -1178,7 +1178,7 @@
           "200" : {
             "description" : "OK",
             "schema" : {
-              "$ref" : "#/definitions/GetOneSpecificEvent"
+              "$ref" : "#/definitions/Event"
             },
             "examples" : {
               "application/json" : {
@@ -2293,8 +2293,8 @@
       }
     },
     "Price" : {
-      "description" : "Model for Price",
-      "required" : [ "category" ],
+      "description" : "Model for items inside the price array.",
+      "required" : [ "description" ],
       "properties" : {
         "category" : {
           "type" : "string",
@@ -2304,21 +2304,42 @@
         "description" : {
           "type" : "string",
           "example" : "Museum+Turm",
-          "description" : "Free text type. There are no predefined types. Can be created freely by"
+          "description" : "Free text description of the price."
         },
         "price" : {
           "type" : "number",
           "format" : "float",
+          "description" : "Price in Euros.",
           "example" : "2.5"
         },
         "groupprice" : {
           "type" : "boolean",
+          "description" : "Is this price a groupprice or not",
           "example" : false
         },
         "agefrom" : {
           "type" : "number",
           "format" : "int32",
+          "description" : "If there is a property max_children_count, this property specifies the age definition for a child.(lower limit)",
           "example" : 5
+        },
+        "ageto" : {
+          "type" : "number",
+          "format" : "int32",
+          "description" : "If there is a property max_children_count, this property specifies the age range for a child.(upper limit)",
+          "example" : 17
+        },
+        "max_adult_count" : {
+          "type" : "number",
+          "format" : "int32",
+          "description" : "specifies the max. number of adults included for the specific price",
+          "example" : 2
+        },
+        "max_children_count" : {
+          "type" : "number",
+          "format" : "int32",
+          "description" : "specifies the max. number of children included for the specific price",
+          "example" : 4
         }
       }
     },
