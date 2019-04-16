@@ -1,0 +1,1 @@
+# smart-village-app-swagger-api-specification
