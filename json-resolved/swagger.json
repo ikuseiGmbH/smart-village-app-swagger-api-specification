@@ -2236,14 +2236,15 @@
           }
         }
       },
-      "description" : "Model for Openinghours"
+      "description" : "Model for Openinghours for a POI"
     },
     "Openingtimedate" : {
       "required" : [ "open" ],
       "properties" : {
         "open" : {
           "type" : "boolean",
-          "example" : true
+          "example" : true,
+          "description" : "Only if the value is true the poi"
         },
         "timefrom" : {
           "type" : "string",
@@ -2255,10 +2256,11 @@
         },
         "weekday" : {
           "type" : "string",
-          "example" : "wednesday"
+          "example" : "wednesday",
+          "description" : "specifies a"
         }
       },
-      "description" : "Model for Openingtimedate"
+      "description" : "Model for Openingtimedate for"
     },
     "Price" : {
       "required" : [ "description" ],
