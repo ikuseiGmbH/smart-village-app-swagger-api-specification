@@ -2230,6 +2230,7 @@
         },
         "openingtimedate" : {
           "type" : "array",
+          "description" : "Array of opening hours. Every item represents the opening hour for one day.",
           "items" : {
             "$ref" : "#/definitions/Openingtimedate"
           }
@@ -2411,7 +2412,8 @@
         },
         "ticket_url" : {
           "type" : "string",
-          "example" : ""
+          "example" : "",
+          "description" : "Url where users can buy tickets."
         },
         "title" : {
           "type" : "string",
@@ -2425,11 +2427,13 @@
         "updated_at_tmb" : {
           "type" : "string",
           "format" : "date-time",
-          "example" : "2018-07-19 13:16:19"
+          "example" : "2018-07-19 13:16:19",
+          "description" : "If the event originally came from tmb, this property tell the app at what time it was last time touched at the tmb database."
         },
         "urls" : {
           "type" : "array",
           "example" : "",
+          "description" : "URLs connected to the event.",
           "items" : {
             "$ref" : "#/definitions/Urls"
           }
@@ -2438,23 +2442,7 @@
       "description" : "Model for Event"
     },
     "Location" : {
-      "required" : [ "coordinates" ],
       "properties" : {
-        "coordinates" : {
-          "$ref" : "#/definitions/Coordinates"
-        },
-        "country" : {
-          "type" : "string",
-          "example" : "Germany"
-        },
-        "department" : {
-          "type" : "string",
-          "example" : "Niemegk"
-        },
-        "district" : {
-          "type" : "string",
-          "example" : "Potsdam-Mittelmark"
-        },
         "id" : {
           "type" : "integer",
           "format" : "int32",
@@ -2462,18 +2450,39 @@
         },
         "name" : {
           "type" : "string",
-          "example" : "Raben"
+          "example" : "Raben",
+          "description" : "location name"
+        },
+        "department" : {
+          "type" : "string",
+          "example" : "Niemegk",
+          "description" : "Department the location belongs to."
+        },
+        "district" : {
+          "type" : "string",
+          "example" : "Potsdam-Mittelmark",
+          "description" : "District the location belongs to."
         },
         "region" : {
           "type" : "string",
-          "example" : "Fläming"
+          "example" : "Fläming",
+          "description" : "Region the location belongs to."
         },
         "state" : {
           "type" : "string",
-          "example" : "Brandenburg"
+          "example" : "Brandenburg",
+          "description" : "State the location belongs to."
+        },
+        "country" : {
+          "type" : "string",
+          "example" : "Germany",
+          "description" : "Country the location belongs to."
+        },
+        "coordinates" : {
+          "$ref" : "#/definitions/Coordinates"
         }
       },
-      "description" : "Model for Location"
+      "description" : "Model for Location."
     },
     "Organizer" : {
       "required" : [ "address" ],
@@ -2748,7 +2757,7 @@
           "example" : "+00:00"
         }
       },
-      "description" : "Model for PublishedDate"
+      "description" : "Model for PublishedDate. TODO in postman collection ändern und hier anpassen. Nicht als Objekt sondern als einfaches Feld."
     },
     "DataProvider" : {
       "required" : [ "address" ],
