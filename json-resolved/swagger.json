@@ -1280,7 +1280,7 @@
               }
             },
             "schema" : {
-              "$ref" : "#/definitions/GetOneSpecificEvent"
+              "$ref" : "#/definitions/Event"
             }
           }
         },
@@ -2260,7 +2260,7 @@
       "description" : "Model for Openingtimedate"
     },
     "Price" : {
-      "required" : [ "category" ],
+      "required" : [ "description" ],
       "properties" : {
         "category" : {
           "type" : "string",
@@ -2270,24 +2270,45 @@
         "description" : {
           "type" : "string",
           "example" : "Museum+Turm",
-          "description" : "Free text type. There are no predefined types. Can be created freely by"
+          "description" : "Free text description of the price."
         },
         "price" : {
           "type" : "number",
           "format" : "float",
-          "example" : 2.5
+          "example" : 2.5,
+          "description" : "Price in Euros."
         },
         "groupprice" : {
           "type" : "boolean",
-          "example" : false
+          "example" : false,
+          "description" : "Is this price a groupprice or not"
         },
         "agefrom" : {
           "type" : "number",
           "format" : "int32",
-          "example" : 5.0
+          "example" : 5.0,
+          "description" : "If there is a property max_children_count, this property specifies the age definition for a child.(lower limit)"
+        },
+        "ageto" : {
+          "type" : "number",
+          "format" : "int32",
+          "example" : 17.0,
+          "description" : "If there is a property max_children_count, this property specifies the age range for a child.(upper limit)"
+        },
+        "max_adult_count" : {
+          "type" : "number",
+          "format" : "int32",
+          "example" : 2.0,
+          "description" : "specifies the max. number of adults included for the specific price"
+        },
+        "max_children_count" : {
+          "type" : "number",
+          "format" : "int32",
+          "example" : 4.0,
+          "description" : "specifies the max. number of children included for the specific price"
         }
       },
-      "description" : "Model for Price"
+      "description" : "Model for items inside the price array."
     },
     "OperatingCompany" : {
       "required" : [ "address" ],
