@@ -2330,18 +2330,19 @@
       },
       "description" : "Model for OperatingCompany. Person, Institution or Company responsible for a POI, Event or Tour."
     },
-    "GetOneSpecificEvent" : {
-      "required" : [ "event" ],
-      "properties" : {
-        "event" : {
-          "$ref" : "#/definitions/Event"
-        }
-      },
-      "description" : "Model for GetOneSpecificEvent"
-    },
     "Event" : {
       "required" : [ "address" ],
       "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 2
+        },
+        "parent_id" : {
+          "type" : "number",
+          "format" : "int32",
+          "example" : 333.0
+        },
         "address" : {
           "$ref" : "#/definitions/Address"
         },
@@ -2349,7 +2350,8 @@
           "$ref" : "#/definitions/Barrierefrei"
         },
         "category_id" : {
-          "type" : "string"
+          "type" : "string",
+          "description" : "Id that links to an id and category in the category tree."
         },
         "contact" : {
           "$ref" : "#/definitions/Contact"
@@ -2371,15 +2373,11 @@
         },
         "description" : {
           "type" : "string",
-          "example" : "Mit der Naturwacht und dem Förster begeben wir uns ins Revier, um den Waldtieren auf die Spur zu kommen.\r\nWelche Tierarten gibt es im Naturpark und welche davon stehen unter Schutz? Wie sind die Lebensbedingungen? Wovon ernährt sich das Wild? Wie passt sich das Wild an seine Umgebung an und wie gehen wir damit um?\r\nIm Anschluss an die Pirsch durch Wald und Feld können Sie sich bei einem kleinen Picknick am Feuer wärmen, stärken und sich vielleicht noch etwas über das Erlebte austauschen.\r\nBitte denken Sie an warme Kleidung."
+          "example" : "Mit der Naturwacht und dem Förster begeben wir uns ins Revier, um den Waldtieren auf die Spur zu kommen.\r\nWelche Tierarten gibt es im Naturpark und welche davon stehen unter Schutz? Wie sind die Lebensbedingungen? Wovon ernährt sich das Wild? Wie passt sich das Wild an seine Umgebung an und wie gehen wir damit um?\r\nIm Anschluss an die Pirsch durch Wald und Feld können Sie sich bei einem kleinen Picknick am Feuer wärmen, stärken und sich vielleicht noch etwas über das Erlebte austauschen.\r\nBitte denken Sie an warme Kleidung.",
+          "description" : "A description of the event"
         },
         "highlight" : {
           "$ref" : "#/definitions/Highlight"
-        },
-        "id" : {
-          "type" : "integer",
-          "format" : "int32",
-          "example" : 2
         },
         "location" : {
           "$ref" : "#/definitions/Location"
@@ -2392,10 +2390,6 @@
         },
         "organizer" : {
           "$ref" : "#/definitions/Organizer"
-        },
-        "parent_id" : {
-          "type" : "string",
-          "example" : ""
         },
         "price_information" : {
           "type" : "string",
