@@ -2276,6 +2276,15 @@
           "type" : "number",
           "format" : "float",
           "example" : 2.5
+        },
+        "groupprice" : {
+          "type" : "boolean",
+          "example" : false
+        },
+        "agefrom" : {
+          "type" : "number",
+          "format" : "int32",
+          "example" : 5.0
         }
       },
       "description" : "Model for Price"
