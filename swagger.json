@@ -1,0 +1,2883 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "Mock API  Smart Village App Bad Belzig",
+    "description" : "This is the Api Documentation for the Smart Village App Bad Belzig",
+    "version" : "1.0.0"
+  },
+  "host" : "3864f6f3-64e8-4473-ba6f-90a55c71e60e.mock.pstmn.io",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/api/v1/categories" : {
+      "get" : {
+        "tags" : [ "Web" ],
+        "summary" : "Get all categories",
+        "description" : "Get all categories to be able to resolve categorizations in POIs and events.",
+        "operationId" : "getAlleCategories",
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/Categories"
+            },
+            "examples" : {
+              "application/json" : {
+                "categories" : [ {
+                  "name" : "culture",
+                  "id" : 1,
+                  "tmb_id" : 17,
+                  "sub_categories" : [ {
+                    "name" : "castles",
+                    "id" : 8876,
+                    "tmb_id" : 32,
+                    "sub_categories" : [ {
+                      "name" : "17th_century",
+                      "id" : 4765,
+                      "tmb_id" : 737
+                    }, {
+                      "name" : "middle_ages",
+                      "id" : 38,
+                      "tmb_id" : 47
+                    } ]
+                  }, {
+                    "name" : "museums",
+                    "id" : 456,
+                    "tmb_id" : 53434
+                  }, {
+                    "name" : "churches",
+                    "id" : 453,
+                    "tmb_id" : 53464
+                  } ]
+                }, {
+                  "name" : "staying_overnight",
+                  "id" : 2,
+                  "tmb_id" : 19,
+                  "sub_categories" : [ {
+                    "name" : "hotels",
+                    "id" : 457,
+                    "tmb_id" : 53466
+                  }, {
+                    "name" : "holiday_flats",
+                    "id" : 458,
+                    "tmb_id" : 53467
+                  }, {
+                    "name" : "camping_sites",
+                    "id" : 978,
+                    "tmb_id" : 53468
+                  } ]
+                } ]
+              }
+            }
+          }
+        },
+        "security" : [ ]
+      }
+    },
+    "/api/v1/events" : {
+      "get" : {
+        "tags" : [ "Web" ],
+        "summary" : "Get all events",
+        "description" : "Get all events (Concerts, festivals, sport evenst) for Bad Belzig and the surrounding area",
+        "operationId" : "getAllEvents",
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/EventIndex"
+            },
+            "examples" : {
+              "application/json" : {
+                "events" : [ {
+                  "id" : 2,
+                  "parent_id" : "",
+                  "title" : "Wildspuren",
+                  "description" : "Mit der Naturwacht und dem Förster begeben wir uns ins Revier, um den Waldtieren auf die Spur zu kommen.\nWelche Tierarten gibt es im Naturpark und welche davon stehen unter Schutz? Wie sind die Lebensbedingungen? Wovon ernährt sich das Wild? Wie passt sich das Wild an seine Umgebung an und wie gehen wir damit um?\nIm Anschluss an die Pirsch durch Wald und Feld können Sie sich bei einem kleinen Picknick am Feuer wärmen, stärken und sich vielleicht noch etwas über das Erlebte austauschen.\nBitte denken Sie an warme Kleidung.",
+                  "price_information" : "2,50 Euro (erm. für Kinder bis 14: 1,50 Euro)",
+                  "category_id" : "",
+                  "ticket_url" : "",
+                  "region" : "Fläming",
+                  "barrierefrei" : {
+                    "description" : "",
+                    "url" : "",
+                    "url_description" : "",
+                    "types" : ""
+                  },
+                  "created_at" : "date",
+                  "updated_at" : "date",
+                  "updated_at_tmb" : "2018-07-31 13:16:19",
+                  "dates" : [ {
+                    "date_start" : "2019-02-16",
+                    "time_start" : "13:00:00",
+                    "date_end" : "2019-02-16",
+                    "time_end" : "18:00:00",
+                    "time_description_de" : null,
+                    "time_description_en" : null,
+                    "time_description_pl" : null,
+                    "use_only_time_description" : false
+                  }, {
+                    "date_start" : "2019-02-17",
+                    "time_start" : "13:00:00",
+                    "date_end" : "2019-03-16",
+                    "time_end" : "18:00:00",
+                    "time_description_de" : null,
+                    "time_description_en" : null,
+                    "time_description_pl" : null,
+                    "use_only_time_description" : false
+                  } ],
+                  "repeat" : false,
+                  "repeat_duration" : {
+                    "start" : null,
+                    "end" : null,
+                    "every_year" : null
+                  },
+                  "urls" : [ {
+                    "url" : "http://www.hoher-flaeming-naturpark.de",
+                    "description" : "Naturpark Hoher Fläming"
+                  }, {
+                    "url" : "http://www.naturwacht.de",
+                    "description" : "Naturwacht Brandenburg"
+                  } ],
+                  "highlight" : {
+                    "event" : false,
+                    "holiday" : false,
+                    "monthly" : false,
+                    "regional" : false,
+                    "local" : false
+                  },
+                  "address" : {
+                    "addition" : "Treffpunkt: Naturparkzentrum Hoher Fläming",
+                    "street" : "Brennereiweg 45 OT Raben",
+                    "zip" : "14823",
+                    "city" : "Raben",
+                    "coordinates" : {
+                      "lat" : 52.041297912598,
+                      "lng" : 12.578530311584
+                    }
+                  },
+                  "contact" : {
+                    "phone" : "+4903384860004",
+                    "fax" : null,
+                    "email" : "info@flaeming.net",
+                    "url" : "http://www.flaeming.net"
+                  },
+                  "organizer" : {
+                    "company_name" : "Naturparkzentrum Hoher Fläming",
+                    "address" : {
+                      "addition" : "",
+                      "street" : "Brennereiweg 45 OT Raben",
+                      "zip" : "14823",
+                      "city" : "Raben",
+                      "coordinates" : {
+                        "lat" : 52.041297912598,
+                        "lng" : 12.578530311584
+                      }
+                    },
+                    "contact" : {
+                      "phone" : "+4903384860004",
+                      "fax" : null,
+                      "email" : "info@flaeming.net",
+                      "url" : "http://www.flaeming.net"
+                    }
+                  },
+                  "location" : {
+                    "id" : 3581,
+                    "name" : "Raben",
+                    "department" : "Niemegk",
+                    "district" : "Potsdam-Mittelmark",
+                    "region" : "Fläming",
+                    "coordinates" : {
+                      "lat" : 52.042051020544,
+                      "lng" : 12.577602953518
+                    }
+                  },
+                  "data_provider" : {
+                    "name" : "tmb",
+                    "address" : {
+                      "addition" : "",
+                      "street" : "Musterstr. 123",
+                      "zip" : "14567",
+                      "city" : "Potsdam",
+                      "coordinates" : {
+                        "lat" : 52.345678,
+                        "lng" : 12.345678
+                      }
+                    },
+                    "contact" : {
+                      "phone" : "+4903384860004",
+                      "fax" : "",
+                      "email" : "test@test.net",
+                      "url" : "http://www.flaeming.net"
+                    },
+                    "logo" : "image_link",
+                    "description" : ""
+                  },
+                  "media_content" : [ {
+                    "type" : "image",
+                    "link" : "http://eingabe.events-in-brandenburg.de/images/itempics/4/2/2/item_457224_pic_1_medium.jpg",
+                    "caption_text" : "Damhirsch"
+                  }, {
+                    "type" : "image",
+                    "link" : "image_link_2",
+                    "caption_text" : "Schwarzwild"
+                  } ]
+                }, {
+                  "id" : 2,
+                  "parent_id" : "",
+                  "title" : "Wildspuren",
+                  "description" : "Mit der Naturwacht und dem Förster begeben wir uns ins Revier, um den Waldtieren auf die Spur zu kommen.\nWelche Tierarten gibt es im Naturpark und welche davon stehen unter Schutz? Wie sind die Lebensbedingungen? Wovon ernährt sich das Wild? Wie passt sich das Wild an seine Umgebung an und wie gehen wir damit um?\nIm Anschluss an die Pirsch durch Wald und Feld können Sie sich bei einem kleinen Picknick am Feuer wärmen, stärken und sich vielleicht noch etwas über das Erlebte austauschen.\nBitte denken Sie an warme Kleidung.",
+                  "price_information" : "2,50 Euro (erm. für Kinder bis 14: 1,50 Euro)",
+                  "category_id" : "",
+                  "ticket_url" : "",
+                  "region" : "Fläming",
+                  "barrierefrei" : {
+                    "description" : "",
+                    "url" : "",
+                    "url_description" : "",
+                    "types" : ""
+                  },
+                  "created_at" : "date",
+                  "updated_at" : "date",
+                  "updated_at_tmb" : "2018-07-31 13:16:19",
+                  "dates" : [ {
+                    "date_start" : "2019-02-16",
+                    "time_start" : "13:00:00",
+                    "date_end" : "2019-02-16",
+                    "time_end" : "18:00:00",
+                    "time_description_de" : null,
+                    "time_description_en" : null,
+                    "time_description_pl" : null,
+                    "use_only_time_description" : false
+                  }, {
+                    "date_start" : "2019-02-17",
+                    "time_start" : "13:00:00",
+                    "date_end" : "2019-03-16",
+                    "time_end" : "18:00:00",
+                    "time_description_de" : null,
+                    "time_description_en" : null,
+                    "time_description_pl" : null,
+                    "use_only_time_description" : false
+                  } ],
+                  "repeat" : false,
+                  "repeat_duration" : {
+                    "start" : null,
+                    "end" : null,
+                    "every_year" : null
+                  },
+                  "urls" : [ {
+                    "url" : "http://www.hoher-flaeming-naturpark.de",
+                    "description" : "Naturpark Hoher Fläming"
+                  }, {
+                    "url" : "http://www.naturwacht.de",
+                    "description" : "Naturwacht Brandenburg"
+                  } ],
+                  "highlight" : {
+                    "event" : false,
+                    "holiday" : false,
+                    "monthly" : false,
+                    "regional" : false,
+                    "local" : false
+                  },
+                  "address" : {
+                    "addition" : "Treffpunkt: Naturparkzentrum Hoher Fläming",
+                    "street" : "Brennereiweg 45 OT Raben",
+                    "zip" : "14823",
+                    "city" : "Raben",
+                    "coordinates" : {
+                      "lat" : 52.041297912598,
+                      "lng" : 12.578530311584
+                    }
+                  },
+                  "contact" : {
+                    "phone" : "+4903384860004",
+                    "fax" : null,
+                    "email" : "info@flaeming.net",
+                    "url" : "http://www.flaeming.net"
+                  },
+                  "organizer" : {
+                    "company_name" : "Naturparkzentrum Hoher Fläming",
+                    "address" : {
+                      "addition" : "",
+                      "street" : "Brennereiweg 45 OT Raben",
+                      "zip" : "14823",
+                      "city" : "Raben",
+                      "coordinates" : {
+                        "lat" : 52.041297912598,
+                        "lng" : 12.578530311584
+                      }
+                    },
+                    "contact" : {
+                      "phone" : "+4903384860004",
+                      "fax" : null,
+                      "email" : "info@flaeming.net",
+                      "url" : "http://www.flaeming.net"
+                    }
+                  },
+                  "location" : {
+                    "id" : 3581,
+                    "name" : "Raben",
+                    "department" : "Niemegk",
+                    "district" : "Potsdam-Mittelmark",
+                    "region" : "Fläming",
+                    "coordinates" : {
+                      "lat" : 52.042051020544,
+                      "lng" : 12.577602953518
+                    }
+                  },
+                  "data_provider" : {
+                    "name" : "tmb",
+                    "address" : {
+                      "addition" : "",
+                      "street" : "Musterstr. 123",
+                      "zip" : "14567",
+                      "city" : "Potsdam",
+                      "coordinates" : {
+                        "lat" : 52.345678,
+                        "lng" : 12.345678
+                      }
+                    },
+                    "contact" : {
+                      "phone" : "+4903384860004",
+                      "fax" : "",
+                      "email" : "test@test.net",
+                      "url" : "http://www.flaeming.net"
+                    },
+                    "logo" : "image_link",
+                    "description" : ""
+                  },
+                  "media_content" : [ {
+                    "type" : "image",
+                    "link" : "http://eingabe.events-in-brandenburg.de/images/itempics/4/2/2/item_457224_pic_1_medium.jpg",
+                    "caption_text" : "Damhirsch"
+                  }, {
+                    "type" : "image",
+                    "link" : "image_link_2",
+                    "caption_text" : "Schwarzwild"
+                  } ]
+                } ]
+              }
+            }
+          }
+        },
+        "security" : [ ]
+      }
+    },
+    "/api/v1/news_items/" : {
+      "get" : {
+        "tags" : [ "Web" ],
+        "summary" : "Get all news",
+        "description" : "Endpoint to get all available news.",
+        "operationId" : "getAllNews",
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/NewsIndex"
+            },
+            "examples" : {
+              "application/json" : {
+                "news_items" : [ {
+                  "id" : 54,
+                  "author" : "Tim Test",
+                  "data_provider" : {
+                    "name" : "MAZ",
+                    "address" : {
+                      "addition" : "",
+                      "street" : "Musterstr. 123",
+                      "zip" : "14567",
+                      "city" : "Potsdam",
+                      "coordinates" : {
+                        "lat" : 52.345678,
+                        "lng" : 12.345678
+                      }
+                    },
+                    "contact" : {
+                      "first_name" : "max",
+                      "last_name" : "mustermann",
+                      "phone" : "+4903384860004",
+                      "fax" : "",
+                      "email" : "test@test.net",
+                      "url" : "http://www.flaeming.net"
+                    },
+                    "logo" : "image_link",
+                    "description" : ""
+                  },
+                  "original_article_url" : "http://www.maz-online.de/Lokales/Ostprignitz-Ruppin/Neuruppin/Fontane-Therme-Fontane-Doener-Fontane-Kuchen-Hier-steckt-ueberall-der-Dichter-aus-Brandenburg-drin",
+                  "type" : "news article",
+                  "full_version" : true,
+                  "characters_to_be_shown" : null,
+                  "publication_date" : null,
+                  "published_date" : {
+                    "date" : "2019-03-30 04:39:53.000000",
+                    "timezone" : "+00:00"
+                  },
+                  "show_publish_date" : true,
+                  "address" : {
+                    "addition" : "",
+                    "street" : null,
+                    "zip" : null,
+                    "city" : "Potsdam",
+                    "coordinates" : {
+                      "lat" : 52.345678,
+                      "lng" : 12.345678
+                    }
+                  },
+                  "blocks" : [ {
+                    "title" : "Döner, Sprudel, Graffiti: Hier steckt überall Fontane drin",
+                    "intro" : "<p>Zum 200. Geburtstag von Theodor Fontane haben wir uns mal umgesehen, was eigentlich alles nach dem märkischen Schriftsteller benannt ist – und sind nicht nur in Brandenburg fündig geworden.</p><p><!-- Methode uuid: \"5ff95920-4f0c-11e9-8de8-e140b6794626\"--></p>\n",
+                    "body" : "<p>Das Märkische hat Fontane berühmt gemacht, vor allem mit seinen „Wanderungen durch die <a href=\"http://multimedia.maz-online.de/wanderungen-durch-die-mark-brandenburg-auf-den-spuren-von-theodor-fontane\" target=\"_self\">Mark Brandenburg</a>“ und seinem Spätwerk „Der Stechlin“ (1897). Es ist die <a href=\"\" target=\"_self\">Heimat Fontanes</a>. In Neuruppin kam er als Sohn eines Apothekers hugenottischer Abstammung zur Welt. In der Fontane-Stadt gibt es eine Fontane-Apotheke, Fontane-Döner, Fontane-Festspiele, eine Fontane-Buchhandlung, die Fontane-Therme, den Kindergarten Fontaneknirpse, den Keglerverein Fontanespatzen und im Weinhaus am Markt den Wein „Edition Fontane“. Im Jahr von Fontanes 200. Geburtstag hat aber nicht nur Neuruppin Fontane-Spezialitäten zu bieten – <a href=\"\" target=\"_blank\">dabei ist das Label gar nicht so ohne weiteres erlaubt</a>. Unsere Fotostrecke zeigt, wo noch überall Fontane zu finden ist – von seiner Wirkstätte Brandenburg bis nach Asien: </p><p><object type=\"gallery\">23665163</object></p><p><strong>Haben Sie noch etwas entdeckt?</strong> Dann schreiben Sie uns eine Mail an <a href=\"mailto:online@maz-online.de\" target=\"_blank\">online@maz-online.de</a>!</p><p><strong>Das könnte Sie auch interessieren:</strong></p><p><ul>\n<li><p><a href=\"\" target=\"_blank\">Vorsicht bei Fontane-Werbung: Markenrechts-Verletzungen drohen</a></p></li>\n<li><p><a href=\"\" target=\"_blank\">MAZ-Special zum 200. Geburtstag: Alles zum Fontane-Jahr in Brandenburg</a></p></li>\n<li><p><a href=\"http://multimedia.maz-online.de/wanderungen-durch-die-mark-brandenburg-auf-den-spuren-von-theodor-fontane\" target=\"_blank\">Multimedia-Story: Auf Fontanes Spuren durch die Mark Brandenburg wandern</a></p></li>\n<li><p><a href=\"\" target=\"_blank\">Tolle Bustouren: Auf Entdeckungsreise mit Fontane</a></p></li>\n</ul></p><p><em>Von MAZonline</em></p>\n",
+                    "media_content" : [ {
+                      "type" : "image",
+                      "width" : "768",
+                      "height" : "513",
+                      "url" : "/var/storage/images/maz/brandenburg/fontane-therme-fontane-doener-fontane-kuchen-hier-steckt-ueberall-der-dichter-aus-brandenburg-drin/716717881-3-ger-DE/Doener-Sprudel-Graffiti-Hier-steckt-ueberall-Fontane-drin.jpg",
+                      "copyright" : "MAZ",
+                      "caption" : "<p>Vor allem in seiner Geburtsstadt Neuruppin ist vieles nach dem Schriftsteller benannt.</p>\n"
+                    }, {
+                      "type" : "image",
+                      "width" : "1024",
+                      "height" : "768",
+                      "url" : "/var/storage/images/maz/lokales/bildergalerien-region/2019/3/hier-steckt-ueberall-fontane-drin/6d480006-4fc8-11e9-a527-47c4c02d837a_27144752975/716717500-1-ger-DE/6d480006-4fc8-11e9-a527-47c4c02d837a_27144752975.jpg",
+                      "caption" : "<p>Seit 1998 trägt die Stadt Neuruppin offiziell den Beinamen „Fontanestadt“. Dem Schriftsteller zu Ehren steht auf dem Fontaneplatz das Fontanedenkmal, geschaffen 1907 vom Bildhauer Max Wiese. Die Skulptur ist inzwischen wohl schon über die Landesgrenzen hinaus bekannt...</p>\n",
+                      "copyright" : "Peter Geisler"
+                    }, {
+                      "type" : "image",
+                      "width" : "1024",
+                      "height" : "768",
+                      "url" : "/var/storage/images/maz/lokales/bildergalerien-region/2019/3/hier-steckt-ueberall-fontane-drin/35addb66-4fc8-11e9-a527-47c4c02d837a_27144753774/716717507-1-ger-DE/35addb66-4fc8-11e9-a527-47c4c02d837a_27144753774.jpg",
+                      "caption" : "<p>...aber kennen Sie schon die Fontane-Playmobil-Figur, die der Spielzeughersteller anlässlich des 200. Geburtstags des Literaten herausgebracht hat? Sie hält sogar ein Exemplar der „Wanderungen durch die Mark Brandenburg“ in der Hand.</p>\n",
+                      "copyright" : "Peter Geisler"
+                    }, {
+                      "type" : "image",
+                      "width" : "1024",
+                      "height" : "768",
+                      "url" : "/var/storage/images/maz/lokales/bildergalerien-region/2019/3/hier-steckt-ueberall-fontane-drin/7a56528a-4fc7-11e9-a527-47c4c02d837a_27144756502/716717514-1-ger-DE/7a56528a-4fc7-11e9-a527-47c4c02d837a_27144756502.jpg",
+                      "caption" : "<p>Wer durch Neuruppin wandert, kommt ohenhin nicht an Fontane vorbei. Auf dem Schulplatz und am Rosengarten können Passanten 51 Ortsnamen lesen, die Fontane in seinen Werken beschrieben hat. Für einige Orte hat Franziska Zänker (Foto), die das Projekt künstlerisch umsetzt, zusätzliche Signets gestaltet. </p>\n",
+                      "copyright" : "Peter Geisler"
+                    }, {
+                      "type" : "image",
+                      "width" : "1024",
+                      "height" : "768",
+                      "url" : "/var/storage/images/maz/lokales/bildergalerien-region/2019/3/hier-steckt-ueberall-fontane-drin/df5054a2-57b4-11e9-ae81-420a4f59002d_05171314264/717420406-1-ger-DE/df5054a2-57b4-11e9-ae81-420a4f59002d_05171314264.jpg",
+                      "caption" : "<p>Wer die Neuruppiner Straßen quert, findet seit dem 5. April Fontane als Ampelmännchen vor.</p>\n",
+                      "copyright" : "Peter Geisler"
+                    } ]
+                  } ]
+                }, {
+                  "id" : 66,
+                  "author" : "Tim Test",
+                  "data_provider" : {
+                    "name" : "MAZ",
+                    "address" : {
+                      "addition" : "",
+                      "street" : "Musterstr. 123",
+                      "zip" : "14567",
+                      "city" : "Potsdam",
+                      "coordinates" : {
+                        "lat" : 52.345678,
+                        "lng" : 12.345678
+                      }
+                    },
+                    "contact" : {
+                      "phone" : "+4903384860004",
+                      "fax" : "",
+                      "email" : "test@test.net",
+                      "url" : "http://www.flaeming.net"
+                    },
+                    "logo" : "image_link",
+                    "description" : ""
+                  },
+                  "original_article_url" : "http://www.maz-online.de/Lokales/Ostprignitz-Ruppin/Neuruppin/Fontane-Therme-Fontane-Doener-Fontane-Kuchen-Hier-steckt-ueberall-der-Dichter-aus-Brandenburg-drin",
+                  "type" : "news article",
+                  "full_version" : true,
+                  "characters_to_be_shown" : null,
+                  "publication_date" : {
+                    "date" : "2019-03-30 04:39:53.000000",
+                    "timezone" : "+00:00"
+                  },
+                  "publish_date" : null,
+                  "show_publish_date" : false,
+                  "address" : {
+                    "addition" : "",
+                    "street" : null,
+                    "zip" : null,
+                    "city" : "Potsdam",
+                    "coordinates" : {
+                      "lat" : 52.345678,
+                      "lng" : 12.345678
+                    }
+                  },
+                  "blocks" : [ {
+                    "title" : "Döner, Sprudel, Graffiti: Hier steckt überall Fontane drin",
+                    "location" : "Potsdam",
+                    "intro" : "<p>Zum 200. Geburtstag von Theodor Fontane haben wir uns mal umgesehen, was eigentlich alles nach dem märkischen Schriftsteller benannt ist – und sind nicht nur in Brandenburg fündig geworden.</p><p><!-- Methode uuid: \"5ff95920-4f0c-11e9-8de8-e140b6794626\"--></p>\n",
+                    "body" : "<p>Das Märkische hat Fontane berühmt gemacht, vor allem mit seinen „Wanderungen durch die <a href=\"http://multimedia.maz-online.de/wanderungen-durch-die-mark-brandenburg-auf-den-spuren-von-theodor-fontane\" target=\"_self\">Mark Brandenburg</a>“ und seinem Spätwerk „Der Stechlin“ (1897). Es ist die <a href=\"\" target=\"_self\">Heimat Fontanes</a>. In Neuruppin kam er als Sohn eines Apothekers hugenottischer Abstammung zur Welt. In der Fontane-Stadt gibt es eine Fontane-Apotheke, Fontane-Döner, Fontane-Festspiele, eine Fontane-Buchhandlung, die Fontane-Therme, den Kindergarten Fontaneknirpse, den Keglerverein Fontanespatzen und im Weinhaus am Markt den Wein „Edition Fontane“. Im Jahr von Fontanes 200. Geburtstag hat aber nicht nur Neuruppin Fontane-Spezialitäten zu bieten – <a href=\"\" target=\"_blank\">dabei ist das Label gar nicht so ohne weiteres erlaubt</a>. Unsere Fotostrecke zeigt, wo noch überall Fontane zu finden ist – von seiner Wirkstätte Brandenburg bis nach Asien: </p><p><object type=\"gallery\">23665163</object></p><p><strong>Haben Sie noch etwas entdeckt?</strong> Dann schreiben Sie uns eine Mail an <a href=\"mailto:online@maz-online.de\" target=\"_blank\">online@maz-online.de</a>!</p><p><strong>Das könnte Sie auch interessieren:</strong></p><p><ul>\n<li><p><a href=\"\" target=\"_blank\">Vorsicht bei Fontane-Werbung: Markenrechts-Verletzungen drohen</a></p></li>\n<li><p><a href=\"\" target=\"_blank\">MAZ-Special zum 200. Geburtstag: Alles zum Fontane-Jahr in Brandenburg</a></p></li>\n<li><p><a href=\"http://multimedia.maz-online.de/wanderungen-durch-die-mark-brandenburg-auf-den-spuren-von-theodor-fontane\" target=\"_blank\">Multimedia-Story: Auf Fontanes Spuren durch die Mark Brandenburg wandern</a></p></li>\n<li><p><a href=\"\" target=\"_blank\">Tolle Bustouren: Auf Entdeckungsreise mit Fontane</a></p></li>\n</ul></p><p><em>Von MAZonline</em></p>\n",
+                    "media_content" : [ {
+                      "type" : "image",
+                      "width" : "768",
+                      "height" : "513",
+                      "url" : "/var/storage/images/maz/brandenburg/fontane-therme-fontane-doener-fontane-kuchen-hier-steckt-ueberall-der-dichter-aus-brandenburg-drin/716717881-3-ger-DE/Doener-Sprudel-Graffiti-Hier-steckt-ueberall-Fontane-drin.jpg",
+                      "copyright" : "MAZ",
+                      "caption" : "<p>Vor allem in seiner Geburtsstadt Neuruppin ist vieles nach dem Schriftsteller benannt.</p>\n"
+                    }, {
+                      "type" : "image",
+                      "width" : "1024",
+                      "height" : "768",
+                      "url" : "/var/storage/images/maz/lokales/bildergalerien-region/2019/3/hier-steckt-ueberall-fontane-drin/6d480006-4fc8-11e9-a527-47c4c02d837a_27144752975/716717500-1-ger-DE/6d480006-4fc8-11e9-a527-47c4c02d837a_27144752975.jpg",
+                      "caption" : "<p>Seit 1998 trägt die Stadt Neuruppin offiziell den Beinamen „Fontanestadt“. Dem Schriftsteller zu Ehren steht auf dem Fontaneplatz das Fontanedenkmal, geschaffen 1907 vom Bildhauer Max Wiese. Die Skulptur ist inzwischen wohl schon über die Landesgrenzen hinaus bekannt...</p>\n",
+                      "copyright" : "Peter Geisler"
+                    }, {
+                      "type" : "image",
+                      "width" : "1024",
+                      "height" : "768",
+                      "url" : "/var/storage/images/maz/lokales/bildergalerien-region/2019/3/hier-steckt-ueberall-fontane-drin/35addb66-4fc8-11e9-a527-47c4c02d837a_27144753774/716717507-1-ger-DE/35addb66-4fc8-11e9-a527-47c4c02d837a_27144753774.jpg",
+                      "caption" : "<p>...aber kennen Sie schon die Fontane-Playmobil-Figur, die der Spielzeughersteller anlässlich des 200. Geburtstags des Literaten herausgebracht hat? Sie hält sogar ein Exemplar der „Wanderungen durch die Mark Brandenburg“ in der Hand.</p>\n",
+                      "copyright" : "Peter Geisler"
+                    }, {
+                      "type" : "image",
+                      "width" : "1024",
+                      "height" : "768",
+                      "url" : "/var/storage/images/maz/lokales/bildergalerien-region/2019/3/hier-steckt-ueberall-fontane-drin/7a56528a-4fc7-11e9-a527-47c4c02d837a_27144756502/716717514-1-ger-DE/7a56528a-4fc7-11e9-a527-47c4c02d837a_27144756502.jpg",
+                      "caption" : "<p>Wer durch Neuruppin wandert, kommt ohenhin nicht an Fontane vorbei. Auf dem Schulplatz und am Rosengarten können Passanten 51 Ortsnamen lesen, die Fontane in seinen Werken beschrieben hat. Für einige Orte hat Franziska Zänker (Foto), die das Projekt künstlerisch umsetzt, zusätzliche Signets gestaltet. </p>\n",
+                      "copyright" : "Peter Geisler"
+                    }, {
+                      "type" : "image",
+                      "width" : "1024",
+                      "height" : "768",
+                      "url" : "/var/storage/images/maz/lokales/bildergalerien-region/2019/3/hier-steckt-ueberall-fontane-drin/df5054a2-57b4-11e9-ae81-420a4f59002d_05171314264/717420406-1-ger-DE/df5054a2-57b4-11e9-ae81-420a4f59002d_05171314264.jpg",
+                      "caption" : "<p>Wer die Neuruppiner Straßen quert, findet seit dem 5. April Fontane als Ampelmännchen vor.</p>\n",
+                      "copyright" : "Peter Geisler"
+                    } ]
+                  }, {
+                    "title" : "Kapitel 1 - Der kleine Theo erblickt das Licht der Welt",
+                    "body" : "Lorem ipsum dolor sit amet consectetur adipiscing. Lorem ipsum dolor sit amet consectetur adipiscing",
+                    "media_content" : [ {
+                      "type" : "background_image",
+                      "url" : "/var/storage/images/maz/lokales/bildergalerien-region/2019/3/hier-steckt-ueberall-fontane-drin/df5054a2-57b4-11e9-ae81-420a4f59002d_05171314264/717420406-1-ger-DE/df5054a2-57b4-11e9-ae81-420a4f59002d_05171314264.jpg"
+                    }, {
+                      "type" : "youtube_video",
+                      "link" : "https://www.youtube.com"
+                    } ]
+                  }, {
+                    "title" : "Kapitel 2 - Eine behütete Kindheit",
+                    "body" : "Lorem ipsum dolor sit amet consectetur adipiscing. Lorem ipsum dolor sit amet consectetur adipiscing",
+                    "media_content" : [ {
+                      "type" : "background_image",
+                      "url" : "/var/storage/images/maz/lokales/bildergalerien-region/2019/3/hier-steckt-ueberall-fontane-drin/df5054a2-57b4-11e9-ae81-420a4f59002d_05171314264/717420406-1-ger-DE/df5054a2-57b4-11e9-ae81-420a4f59002d_05171314264.jpg"
+                    }, {
+                      "type" : "soundcloud_audio",
+                      "link" : "https://www.soundcloud.com/theos_kindheit_ein_feature_dlf.mp3"
+                    } ]
+                  } ]
+                } ]
+              }
+            }
+          }
+        },
+        "security" : [ ]
+      }
+    },
+    "/api/v1/points-of-interest" : {
+      "get" : {
+        "tags" : [ "Web" ],
+        "summary" : "Get All Points of Interests",
+        "description" : "Endpoint which provides all Points of Interests (Castles, Museums, etc.)",
+        "operationId" : "getAllPointsOfInterests",
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/PointOfInterestIndex"
+            },
+            "examples" : {
+              "application/json" : {
+                "points_of_interest" : [ {
+                  "id" : 21,
+                  "name" : "Burg Rabenstein",
+                  "description" : "Die Burg Rabenstein gehört zu den schönsten Burgen in Brandenburg. Im 13. Jahrhundert wurde die Anlage auf dem 153 Meter hohen \"Steilen Hagen\" das erste Mal erwähnt. Die Burg galt lange Zeit als uneinnehmbar. Zur Burganlage gehören eine Kapelle, ein Rittersaal und die Folterkammer. Im Burgvorhof befinden sich der Brunnen, die Scheune und das Backhaus. Der 30 Meter hohe Bergfried bietet eine einmalige Aussicht über den Hohen Fläming. Jedes Jahr zu Ostern findet auf Burg Rabenstein ein mittelalterliches Burgspektakel statt.",
+                  "mobile_description" : "Beschreibungstext speziell für mobile Endgeräte, falls vorhanden",
+                  "category_id" : 8876,
+                  "created_at" : "01.01.01",
+                  "updated_at" : "01.01.01",
+                  "status" : "active",
+                  "data_provider" : {
+                    "name" : "tmb",
+                    "address" : {
+                      "addition" : "",
+                      "street" : "Musterstr. 123",
+                      "zip" : "14567",
+                      "city" : "Potsdam",
+                      "coordinates" : {
+                        "lat" : 52.345678,
+                        "lng" : 12.345678
+                      }
+                    },
+                    "contact" : {
+                      "first_name" : "Max",
+                      "last_name" : "Mustermann",
+                      "phone" : "+4903384860004",
+                      "fax" : "",
+                      "email" : "test@test.net",
+                      "url" : "http://www.flaeming.net"
+                    },
+                    "logo" : "image_link",
+                    "description" : ""
+                  },
+                  "address" : {
+                    "addition" : "blablub",
+                    "city" : "Rabenstein/Fläming OT Raben",
+                    "street" : "Zur Burg 49",
+                    "zip" : 14823,
+                    "coordinates" : {
+                      "lat" : 3334076,
+                      "lng" : 5767630
+                    }
+                  },
+                  "contact" : {
+                    "first_name" : "Max",
+                    "last_name" : "Mustermann",
+                    "telephone" : "033848-60221",
+                    "e-mail" : "info@burgrabenstein.de",
+                    "fax" : "033848-60230",
+                    "url" : "www.burgrabenstein.de"
+                  },
+                  "operating_company" : {
+                    "name" : "Fremdenverkehrsverein \"Niemegker-Land\" e.V.",
+                    "address" : {
+                      "addition" : "",
+                      "city" : "Rabenstein/Fläming OT Raben",
+                      "street" : "Zur Burg 49",
+                      "zip" : 14823,
+                      "coordinates" : {
+                        "lat" : 3334076,
+                        "lng" : 5767630
+                      }
+                    },
+                    "contact" : {
+                      "first_name" : "Max",
+                      "last_name" : "Mustermann",
+                      "telephone" : "033848-60221",
+                      "e-mail" : "info@burgrabenstein.de",
+                      "fax" : "033848-60230",
+                      "url" : "www.burgrabenstein.de"
+                    }
+                  },
+                  "location" : {
+                    "id" : 3581,
+                    "name" : "Raben",
+                    "department" : "Niemegk",
+                    "district" : "Potsdam-Mittelmark",
+                    "region" : "Fläming",
+                    "state" : "Brandenburg",
+                    "country" : "Germany",
+                    "coordinates" : {
+                      "lat" : 3333869,
+                      "lng" : 5768485
+                    }
+                  },
+                  "thumbnail" : "thumbnail_image_url",
+                  "media_content" : [ {
+                    "type" : "image",
+                    "url" : "image_link_1",
+                    "caption_text" : "text_1"
+                  }, {
+                    "type" : "image",
+                    "url" : "image_link_2",
+                    "caption_text" : "text_2"
+                  }, {
+                    "type" : "image",
+                    "url" : "image_link_3",
+                    "caption_text" : "text_3"
+                  } ],
+                  "price" : [ {
+                    "category" : "adult",
+                    "price" : 2.5,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "category" : "reduced",
+                    "price" : 1.5,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "category" : "senior",
+                    "agefrom" : 65,
+                    "price" : 1,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "category" : "children",
+                    "price" : 0.5,
+                    "agefrom" : 6,
+                    "ageto" : 17,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "category" : "family",
+                    "price" : 6.5,
+                    "groupprice" : true,
+                    "agefrom" : 5,
+                    "ageto" : 17,
+                    "max_adult_count" : 2,
+                    "max_children_count" : 3,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "category" : "group",
+                    "price" : 12.5,
+                    "max_adultcount" : 8,
+                    "max_childrencount" : 4,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "category" : "Burgtarif",
+                    "price" : 1,
+                    "description" : "Turm (ohne Museum)"
+                  }, {
+                    "category" : "Arbeistlosentarif",
+                    "price" : 0.5,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "description" : "Kinder unter 6 Jahren haben immer freien Eintritt"
+                  } ],
+                  "openinghours" : {
+                    "openingtimedate" : [ {
+                      "weekday" : "wednesday",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "20:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "thursday",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "20:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "friday",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "20:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "saturday",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "18:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "saturday",
+                      "date_from" : "01.03.2017",
+                      "date_to" : "01.09.2017",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "19:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "sunday",
+                      "date_from" : "01.03.",
+                      "date_to" : "01.09.",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "19:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "holidays",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "19:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "sylvester",
+                      "date" : "",
+                      "timefrom" : "10:00:00",
+                      "timeto" : "13:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "christmas_eve",
+                      "date" : "",
+                      "timefrom" : "10:00:00",
+                      "timeto" : "13:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "first_christmas_day",
+                      "date" : "",
+                      "timefrom" : "10:00:00",
+                      "timeto" : "13:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "second_christmas_day",
+                      "date" : "",
+                      "timefrom" : "10:00:00",
+                      "timeto" : "13:00:00",
+                      "open" : false
+                    }, {
+                      "weekday" : "new_year",
+                      "date" : "",
+                      "timefrom" : "10:00:00",
+                      "timeto" : "13:00:00",
+                      "open" : false
+                    } ],
+                    "additional_information" : "letzter Eintritt eine Stunde vor Schließung"
+                  },
+                  "tags" : [ "Freilufttheater", "Geschichts- und Gewerbemuseum", "Historische Baudenkmäler" ],
+                  "certificates" : [ "Anbieter mit Zertifizierung: 'Burgen Qualität Deutschland'" ],
+                  "accesibility_info_link" : "http://www.barrierefrei-brandenburg.de/index.php?id=dsview&tx_tmbpoisearch_pi2[poi]=11399"
+                }, {
+                  "id" : 22,
+                  "name" : "Burg Adlerstein",
+                  "description" : "Die Burg Rabenstein gehört zu den schönsten Burgen in Brandenburg. Im 13. Jahrhundert wurde die Anlage auf dem 153 Meter hohen \"Steilen Hagen\" das erste Mal erwähnt. Die Burg galt lange Zeit als uneinnehmbar. Zur Burganlage gehören eine Kapelle, ein Rittersaal und die Folterkammer. Im Burgvorhof befinden sich der Brunnen, die Scheune und das Backhaus. Der 30 Meter hohe Bergfried bietet eine einmalige Aussicht über den Hohen Fläming. Jedes Jahr zu Ostern findet auf Burg Rabenstein ein mittelalterliches Burgspektakel statt.",
+                  "mobile_description" : "Beschreibungstext speziell für mobile Endgeräte, falls vorhanden",
+                  "category_id" : 8876,
+                  "created_at" : "01.01.01",
+                  "updated_at" : "01.01.01",
+                  "status" : "active",
+                  "data_provider" : {
+                    "name" : "tmb",
+                    "address" : {
+                      "addition" : "",
+                      "street" : "Musterstr. 123",
+                      "zip" : "14567",
+                      "city" : "Potsdam",
+                      "coordinates" : {
+                        "lat" : 52.345678,
+                        "lng" : 12.345678
+                      }
+                    },
+                    "contact" : {
+                      "first_name" : "Max",
+                      "last_name" : "Mustermann",
+                      "phone" : "+4903384860004",
+                      "fax" : "",
+                      "email" : "test@test.net",
+                      "url" : "http://www.flaeming.net"
+                    },
+                    "logo" : "image_link",
+                    "description" : ""
+                  },
+                  "address" : {
+                    "addition" : "blablub",
+                    "city" : "Rabenstein/Fläming OT Raben",
+                    "street" : "Zur Burg 49",
+                    "zip" : 14823,
+                    "coordinates" : {
+                      "lat" : 3334076,
+                      "lng" : 5767630
+                    }
+                  },
+                  "contact" : {
+                    "first_name" : "Max",
+                    "last_name" : "Mustermann",
+                    "telephone" : "033848-60221",
+                    "e-mail" : "info@burgrabenstein.de",
+                    "fax" : "033848-60230",
+                    "url" : "www.burgrabenstein.de"
+                  },
+                  "operating_company" : {
+                    "name" : "Fremdenverkehrsverein \"Niemegker-Land\" e.V.",
+                    "address" : {
+                      "addition" : "",
+                      "city" : "Rabenstein/Fläming OT Raben",
+                      "street" : "Zur Burg 49",
+                      "zip" : 14823,
+                      "coordinates" : {
+                        "lat" : 3334076,
+                        "lng" : 5767630
+                      }
+                    },
+                    "contact" : {
+                      "first_name" : "Max",
+                      "last_name" : "Mustermann",
+                      "telephone" : "033848-60221",
+                      "e-mail" : "info@burgrabenstein.de",
+                      "fax" : "033848-60230",
+                      "url" : "www.burgrabenstein.de"
+                    }
+                  },
+                  "location" : {
+                    "id" : 3581,
+                    "name" : "Raben",
+                    "department" : "Niemegk",
+                    "district" : "Potsdam-Mittelmark",
+                    "region" : "Fläming",
+                    "state" : "Brandenburg",
+                    "country" : "Germany",
+                    "coordinates" : {
+                      "lat" : 3333869,
+                      "lng" : 5768485
+                    }
+                  },
+                  "thumbnail" : "thumbnail_image_url",
+                  "media_content" : [ {
+                    "type" : "image",
+                    "url" : "image_link_1",
+                    "caption_text" : "text_1"
+                  }, {
+                    "type" : "image",
+                    "url" : "image_link_2",
+                    "caption_text" : "text_2"
+                  }, {
+                    "type" : "image",
+                    "url" : "image_link_3",
+                    "caption_text" : "text_3"
+                  } ],
+                  "price" : [ {
+                    "category" : "adult",
+                    "price" : 2.5,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "category" : "reduced",
+                    "price" : 1.5,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "category" : "senior",
+                    "agefrom" : 65,
+                    "price" : 1,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "category" : "children",
+                    "price" : 0.5,
+                    "agefrom" : 6,
+                    "ageto" : 17,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "category" : "family",
+                    "price" : 6.5,
+                    "groupprice" : true,
+                    "agefrom" : 5,
+                    "ageto" : 17,
+                    "max_adult_count" : 2,
+                    "max_children_count" : 3,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "category" : "group",
+                    "price" : 12.5,
+                    "max_adultcount" : 8,
+                    "max_childrencount" : 4,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "category" : "Burgtarif",
+                    "price" : 1,
+                    "description" : "Turm (ohne Museum)"
+                  }, {
+                    "category" : "Arbeistlosentarif",
+                    "price" : 0.5,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "description" : "Kinder unter 6 Jahren haben immer freien Eintritt"
+                  } ],
+                  "openinghours" : {
+                    "openingtimedate" : [ {
+                      "weekday" : "wednesday",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "20:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "thursday",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "20:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "friday",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "20:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "saturday",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "18:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "saturday",
+                      "date_from" : "01.03.2017",
+                      "date_to" : "01.09.2017",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "19:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "sunday",
+                      "date_from" : "01.03.",
+                      "date_to" : "01.09.",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "19:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "holidays",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "19:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "sylvester",
+                      "date" : "",
+                      "timefrom" : "10:00:00",
+                      "timeto" : "13:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "christmas_eve",
+                      "date" : "",
+                      "timefrom" : "10:00:00",
+                      "timeto" : "13:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "first_christmas_day",
+                      "date" : "",
+                      "timefrom" : "10:00:00",
+                      "timeto" : "13:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "second_christmas_day",
+                      "date" : "",
+                      "timefrom" : "10:00:00",
+                      "timeto" : "13:00:00",
+                      "open" : false
+                    }, {
+                      "weekday" : "new_year",
+                      "date" : "",
+                      "timefrom" : "10:00:00",
+                      "timeto" : "13:00:00",
+                      "open" : false
+                    } ],
+                    "additional_information" : "letzter Eintritt eine Stunde vor Schließung"
+                  },
+                  "tags" : [ "Freilufttheater", "Geschichts- und Gewerbemuseum", "Historische Baudenkmäler" ],
+                  "certificates" : [ "Anbieter mit Zertifizierung: 'Burgen Qualität Deutschland'" ],
+                  "accesibility_info_link" : "http://www.barrierefrei-brandenburg.de/index.php?id=dsview&tx_tmbpoisearch_pi2[poi]=11399"
+                } ]
+              }
+            }
+          }
+        },
+        "security" : [ ]
+      }
+    },
+    "/api/v1/tours" : {
+      "get" : {
+        "tags" : [ "Web" ],
+        "summary" : "Get all Tours",
+        "description" : "Endpoint which provides all Tours",
+        "operationId" : "getAllTours",
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/TourIndex"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/news_items/3" : {
+      "get" : {
+        "tags" : [ "Web" ],
+        "summary" : "Get one news",
+        "description" : "Endpoint to get all available news.",
+        "operationId" : "getOneNews",
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/GetOneNews"
+            },
+            "examples" : {
+              "application/json" : {
+                "news_item" : {
+                  "id" : 54,
+                  "author" : "Tim Test",
+                  "data_provider" : {
+                    "name" : "MAZ",
+                    "address" : {
+                      "addition" : "",
+                      "street" : "Musterstr. 123",
+                      "zip" : "14567",
+                      "city" : "Potsdam",
+                      "coordinates" : {
+                        "lat" : 52.345678,
+                        "lng" : 12.345678
+                      }
+                    },
+                    "contact" : {
+                      "first_name" : "max",
+                      "last_name" : "mustermann",
+                      "phone" : "+4903384860004",
+                      "fax" : "",
+                      "email" : "test@test.net",
+                      "url" : "http://www.flaeming.net"
+                    },
+                    "logo" : "image_link",
+                    "description" : ""
+                  },
+                  "original_article_url" : "http://www.maz-online.de/Lokales/Ostprignitz-Ruppin/Neuruppin/Fontane-Therme-Fontane-Doener-Fontane-Kuchen-Hier-steckt-ueberall-der-Dichter-aus-Brandenburg-drin",
+                  "type" : "news article",
+                  "full_version" : true,
+                  "characters_to_be_shown" : null,
+                  "publication_date" : null,
+                  "published_date" : {
+                    "date" : "2019-03-30 04:39:53.000000",
+                    "timezone" : "+00:00"
+                  },
+                  "show_publish_date" : true,
+                  "address" : {
+                    "addition" : "",
+                    "street" : null,
+                    "zip" : null,
+                    "city" : "Potsdam",
+                    "coordinates" : {
+                      "lat" : 52.345678,
+                      "lng" : 12.345678
+                    }
+                  },
+                  "blocks" : [ {
+                    "title" : "Döner, Sprudel, Graffiti: Hier steckt überall Fontane drin",
+                    "intro" : "<p>Zum 200. Geburtstag von Theodor Fontane haben wir uns mal umgesehen, was eigentlich alles nach dem märkischen Schriftsteller benannt ist – und sind nicht nur in Brandenburg fündig geworden.</p><p><!-- Methode uuid: \"5ff95920-4f0c-11e9-8de8-e140b6794626\"--></p>\n",
+                    "body" : "<p>Das Märkische hat Fontane berühmt gemacht, vor allem mit seinen „Wanderungen durch die <a href=\"http://multimedia.maz-online.de/wanderungen-durch-die-mark-brandenburg-auf-den-spuren-von-theodor-fontane\" target=\"_self\">Mark Brandenburg</a>“ und seinem Spätwerk „Der Stechlin“ (1897). Es ist die <a href=\"\" target=\"_self\">Heimat Fontanes</a>. In Neuruppin kam er als Sohn eines Apothekers hugenottischer Abstammung zur Welt. In der Fontane-Stadt gibt es eine Fontane-Apotheke, Fontane-Döner, Fontane-Festspiele, eine Fontane-Buchhandlung, die Fontane-Therme, den Kindergarten Fontaneknirpse, den Keglerverein Fontanespatzen und im Weinhaus am Markt den Wein „Edition Fontane“. Im Jahr von Fontanes 200. Geburtstag hat aber nicht nur Neuruppin Fontane-Spezialitäten zu bieten – <a href=\"\" target=\"_blank\">dabei ist das Label gar nicht so ohne weiteres erlaubt</a>. Unsere Fotostrecke zeigt, wo noch überall Fontane zu finden ist – von seiner Wirkstätte Brandenburg bis nach Asien: </p><p><object type=\"gallery\">23665163</object></p><p><strong>Haben Sie noch etwas entdeckt?</strong> Dann schreiben Sie uns eine Mail an <a href=\"mailto:online@maz-online.de\" target=\"_blank\">online@maz-online.de</a>!</p><p><strong>Das könnte Sie auch interessieren:</strong></p><p><ul>\n<li><p><a href=\"\" target=\"_blank\">Vorsicht bei Fontane-Werbung: Markenrechts-Verletzungen drohen</a></p></li>\n<li><p><a href=\"\" target=\"_blank\">MAZ-Special zum 200. Geburtstag: Alles zum Fontane-Jahr in Brandenburg</a></p></li>\n<li><p><a href=\"http://multimedia.maz-online.de/wanderungen-durch-die-mark-brandenburg-auf-den-spuren-von-theodor-fontane\" target=\"_blank\">Multimedia-Story: Auf Fontanes Spuren durch die Mark Brandenburg wandern</a></p></li>\n<li><p><a href=\"\" target=\"_blank\">Tolle Bustouren: Auf Entdeckungsreise mit Fontane</a></p></li>\n</ul></p><p><em>Von MAZonline</em></p>\n",
+                    "media_content" : [ {
+                      "type" : "image",
+                      "width" : "768",
+                      "height" : "513",
+                      "url" : "/var/storage/images/maz/brandenburg/fontane-therme-fontane-doener-fontane-kuchen-hier-steckt-ueberall-der-dichter-aus-brandenburg-drin/716717881-3-ger-DE/Doener-Sprudel-Graffiti-Hier-steckt-ueberall-Fontane-drin.jpg",
+                      "copyright" : "MAZ",
+                      "caption" : "<p>Vor allem in seiner Geburtsstadt Neuruppin ist vieles nach dem Schriftsteller benannt.</p>\n"
+                    }, {
+                      "type" : "image",
+                      "width" : "1024",
+                      "height" : "768",
+                      "url" : "/var/storage/images/maz/lokales/bildergalerien-region/2019/3/hier-steckt-ueberall-fontane-drin/6d480006-4fc8-11e9-a527-47c4c02d837a_27144752975/716717500-1-ger-DE/6d480006-4fc8-11e9-a527-47c4c02d837a_27144752975.jpg",
+                      "caption" : "<p>Seit 1998 trägt die Stadt Neuruppin offiziell den Beinamen „Fontanestadt“. Dem Schriftsteller zu Ehren steht auf dem Fontaneplatz das Fontanedenkmal, geschaffen 1907 vom Bildhauer Max Wiese. Die Skulptur ist inzwischen wohl schon über die Landesgrenzen hinaus bekannt...</p>\n",
+                      "copyright" : "Peter Geisler"
+                    }, {
+                      "type" : "image",
+                      "width" : "1024",
+                      "height" : "768",
+                      "url" : "/var/storage/images/maz/lokales/bildergalerien-region/2019/3/hier-steckt-ueberall-fontane-drin/35addb66-4fc8-11e9-a527-47c4c02d837a_27144753774/716717507-1-ger-DE/35addb66-4fc8-11e9-a527-47c4c02d837a_27144753774.jpg",
+                      "caption" : "<p>...aber kennen Sie schon die Fontane-Playmobil-Figur, die der Spielzeughersteller anlässlich des 200. Geburtstags des Literaten herausgebracht hat? Sie hält sogar ein Exemplar der „Wanderungen durch die Mark Brandenburg“ in der Hand.</p>\n",
+                      "copyright" : "Peter Geisler"
+                    }, {
+                      "type" : "image",
+                      "width" : "1024",
+                      "height" : "768",
+                      "url" : "/var/storage/images/maz/lokales/bildergalerien-region/2019/3/hier-steckt-ueberall-fontane-drin/7a56528a-4fc7-11e9-a527-47c4c02d837a_27144756502/716717514-1-ger-DE/7a56528a-4fc7-11e9-a527-47c4c02d837a_27144756502.jpg",
+                      "caption" : "<p>Wer durch Neuruppin wandert, kommt ohenhin nicht an Fontane vorbei. Auf dem Schulplatz und am Rosengarten können Passanten 51 Ortsnamen lesen, die Fontane in seinen Werken beschrieben hat. Für einige Orte hat Franziska Zänker (Foto), die das Projekt künstlerisch umsetzt, zusätzliche Signets gestaltet. </p>\n",
+                      "copyright" : "Peter Geisler"
+                    }, {
+                      "type" : "image",
+                      "width" : "1024",
+                      "height" : "768",
+                      "url" : "/var/storage/images/maz/lokales/bildergalerien-region/2019/3/hier-steckt-ueberall-fontane-drin/df5054a2-57b4-11e9-ae81-420a4f59002d_05171314264/717420406-1-ger-DE/df5054a2-57b4-11e9-ae81-420a4f59002d_05171314264.jpg",
+                      "caption" : "<p>Wer die Neuruppiner Straßen quert, findet seit dem 5. April Fontane als Ampelmännchen vor.</p>\n",
+                      "copyright" : "Peter Geisler"
+                    } ]
+                  } ]
+                }
+              }
+            }
+          }
+        },
+        "security" : [ ]
+      }
+    },
+    "/api/v1/events/33" : {
+      "get" : {
+        "tags" : [ "Web" ],
+        "summary" : "Get one specific event",
+        "description" : "Get one specific event (Concerts, festivals, sport evenst) for Bad Belzig and the surrounding area",
+        "operationId" : "getOneSpecificEvent",
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/GetOneSpecificEvent"
+            },
+            "examples" : {
+              "application/json" : {
+                "event" : {
+                  "id" : 2,
+                  "parent_id" : "",
+                  "title" : "Wildspuren",
+                  "description" : "Mit der Naturwacht und dem Förster begeben wir uns ins Revier, um den Waldtieren auf die Spur zu kommen.\nWelche Tierarten gibt es im Naturpark und welche davon stehen unter Schutz? Wie sind die Lebensbedingungen? Wovon ernährt sich das Wild? Wie passt sich das Wild an seine Umgebung an und wie gehen wir damit um?\nIm Anschluss an die Pirsch durch Wald und Feld können Sie sich bei einem kleinen Picknick am Feuer wärmen, stärken und sich vielleicht noch etwas über das Erlebte austauschen.\nBitte denken Sie an warme Kleidung.",
+                  "price_information" : "2,50 Euro (erm. für Kinder bis 14: 1,50 Euro)",
+                  "category_id" : "",
+                  "ticket_url" : "",
+                  "region" : "Fläming",
+                  "barrierefrei" : {
+                    "description" : "",
+                    "url" : "",
+                    "url_description" : "",
+                    "types" : ""
+                  },
+                  "created_at" : "date",
+                  "updated_at" : "date",
+                  "updated_at_tmb" : "2018-07-31 13:16:19",
+                  "dates" : [ {
+                    "date_start" : "2019-02-16",
+                    "time_start" : "13:00:00",
+                    "date_end" : "2019-02-16",
+                    "time_end" : "18:00:00",
+                    "time_description_de" : null,
+                    "time_description_en" : null,
+                    "time_description_pl" : null,
+                    "use_only_time_description" : false
+                  }, {
+                    "date_start" : "2019-02-17",
+                    "time_start" : "13:00:00",
+                    "date_end" : "2019-03-16",
+                    "time_end" : "18:00:00",
+                    "time_description_de" : null,
+                    "time_description_en" : null,
+                    "time_description_pl" : null,
+                    "use_only_time_description" : false
+                  } ],
+                  "repeat" : false,
+                  "repeat_duration" : {
+                    "start" : null,
+                    "end" : null,
+                    "every_year" : null
+                  },
+                  "urls" : [ {
+                    "url" : "http://www.hoher-flaeming-naturpark.de",
+                    "description" : "Naturpark Hoher Fläming"
+                  }, {
+                    "url" : "http://www.naturwacht.de",
+                    "description" : "Naturwacht Brandenburg"
+                  } ],
+                  "highlight" : {
+                    "event" : false,
+                    "holiday" : false,
+                    "monthly" : false,
+                    "regional" : false,
+                    "local" : false
+                  },
+                  "address" : {
+                    "addition" : "Treffpunkt: Naturparkzentrum Hoher Fläming",
+                    "street" : "Brennereiweg 45 OT Raben",
+                    "zip" : "14823",
+                    "city" : "Raben",
+                    "coordinates" : {
+                      "lat" : 52.041297912598,
+                      "lng" : 12.578530311584
+                    }
+                  },
+                  "contact" : {
+                    "phone" : "+4903384860004",
+                    "fax" : null,
+                    "email" : "info@flaeming.net",
+                    "url" : "http://www.flaeming.net"
+                  },
+                  "organizer" : {
+                    "company_name" : "Naturparkzentrum Hoher Fläming",
+                    "address" : {
+                      "addition" : "",
+                      "street" : "Brennereiweg 45 OT Raben",
+                      "zip" : "14823",
+                      "city" : "Raben",
+                      "coordinates" : {
+                        "lat" : 52.041297912598,
+                        "lng" : 12.578530311584
+                      }
+                    },
+                    "contact" : {
+                      "phone" : "+4903384860004",
+                      "fax" : null,
+                      "email" : "info@flaeming.net",
+                      "url" : "http://www.flaeming.net"
+                    }
+                  },
+                  "location" : {
+                    "id" : 3581,
+                    "name" : "Raben",
+                    "department" : "Niemegk",
+                    "district" : "Potsdam-Mittelmark",
+                    "region" : "Fläming",
+                    "coordinates" : {
+                      "lat" : 52.042051020544,
+                      "lng" : 12.577602953518
+                    }
+                  },
+                  "data_provider" : {
+                    "name" : "tmb",
+                    "address" : {
+                      "addition" : "",
+                      "street" : "Musterstr. 123",
+                      "zip" : "14567",
+                      "city" : "Potsdam",
+                      "coordinates" : {
+                        "lat" : 52.345678,
+                        "lng" : 12.345678
+                      }
+                    },
+                    "contact" : {
+                      "phone" : "+4903384860004",
+                      "fax" : "",
+                      "email" : "test@test.net",
+                      "url" : "http://www.flaeming.net"
+                    },
+                    "logo" : "image_link",
+                    "description" : ""
+                  },
+                  "media_content" : [ {
+                    "type" : "image",
+                    "link" : "http://eingabe.events-in-brandenburg.de/images/itempics/4/2/2/item_457224_pic_1_medium.jpg",
+                    "caption_text" : "Damhirsch"
+                  }, {
+                    "type" : "image",
+                    "link" : "image_link_2",
+                    "caption_text" : "Schwarzwild"
+                  } ]
+                }
+              }
+            }
+          }
+        },
+        "security" : [ ]
+      }
+    },
+    "/api/v1/points-of-interest/1" : {
+      "get" : {
+        "tags" : [ "Web" ],
+        "summary" : "Get one specific Point of Interest",
+        "description" : "Endpoint which provides one endpoint specified by its id",
+        "operationId" : "getOneSpecificPointOfInterest",
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/PointOfInterest"
+            },
+            "examples" : {
+              "application/json" : {
+                "point_of_interest" : {
+                  "id" : 21,
+                  "external_id" : "11399",
+                  "name" : "Burg Rabenstein",
+                  "description" : "Die Burg Rabenstein gehört zu den schönsten Burgen in Brandenburg. Im 13. Jahrhundert wurde die Anlage auf dem 153 Meter hohen \"Steilen Hagen\" das erste Mal erwähnt. Die Burg galt lange Zeit als uneinnehmbar. Zur Burganlage gehören eine Kapelle, ein Rittersaal und die Folterkammer. Im Burgvorhof befinden sich der Brunnen, die Scheune und das Backhaus. Der 30 Meter hohe Bergfried bietet eine einmalige Aussicht über den Hohen Fläming. Jedes Jahr zu Ostern findet auf Burg Rabenstein ein mittelalterliches Burgspektakel statt.",
+                  "mobile_description" : "Beschreibungstext speziell für mobile Endgeräte, falls vorhanden",
+                  "category_id" : 8876,
+                  "created_at" : "01.01.01",
+                  "updated_at" : "01.01.01",
+                  "status" : "active",
+                  "data_provider" : {
+                    "name" : "tmb",
+                    "address" : {
+                      "addition" : "",
+                      "street" : "Musterstr. 123",
+                      "zip" : "14567",
+                      "city" : "Potsdam",
+                      "coordinates" : {
+                        "lat" : 52.345678,
+                        "lng" : 12.345678
+                      }
+                    },
+                    "contact" : {
+                      "first_name" : "Max",
+                      "last_name" : "Mustermann",
+                      "phone" : "+4903384860004",
+                      "fax" : "",
+                      "email" : "test@test.net",
+                      "url" : "http://www.flaeming.net"
+                    },
+                    "logo" : "image_link",
+                    "description" : ""
+                  },
+                  "address" : {
+                    "addition" : "blablub",
+                    "city" : "Rabenstein/Fläming OT Raben",
+                    "street" : "Zur Burg 49",
+                    "zip" : 14823,
+                    "coordinates" : {
+                      "lat" : 3334076,
+                      "lng" : 5767630
+                    }
+                  },
+                  "contact" : {
+                    "first_name" : "Max",
+                    "last_name" : "Mustermann",
+                    "telephone" : "033848-60221",
+                    "e-mail" : "info@burgrabenstein.de",
+                    "fax" : "033848-60230",
+                    "url" : "www.burgrabenstein.de"
+                  },
+                  "operating_company" : {
+                    "name" : "Fremdenverkehrsverein \"Niemegker-Land\" e.V.",
+                    "address" : {
+                      "addition" : "",
+                      "city" : "Rabenstein/Fläming OT Raben",
+                      "street" : "Zur Burg 49",
+                      "zip" : 14823,
+                      "coordinates" : {
+                        "lat" : 3334076,
+                        "lng" : 5767630
+                      }
+                    },
+                    "contact" : {
+                      "first_name" : "Max",
+                      "last_name" : "Mustermann",
+                      "telephone" : "033848-60221",
+                      "e-mail" : "info@burgrabenstein.de",
+                      "fax" : "033848-60230",
+                      "url" : "www.burgrabenstein.de"
+                    }
+                  },
+                  "location" : {
+                    "id" : 3581,
+                    "name" : "Raben",
+                    "department" : "Niemegk",
+                    "district" : "Potsdam-Mittelmark",
+                    "region" : "Fläming",
+                    "state" : "Brandenburg",
+                    "country" : "Germany",
+                    "coordinates" : {
+                      "lat" : 3333869,
+                      "lng" : 5768485
+                    }
+                  },
+                  "thumbnail" : "thumbnail_image_url",
+                  "media_content" : [ {
+                    "type" : "image",
+                    "url" : "image_link_1",
+                    "caption_text" : "text_1"
+                  }, {
+                    "type" : "image",
+                    "url" : "image_link_2",
+                    "caption_text" : "text_2"
+                  }, {
+                    "type" : "image",
+                    "url" : "image_link_3",
+                    "caption_text" : "text_3"
+                  } ],
+                  "price" : [ {
+                    "category" : "adult",
+                    "price" : 2.5,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "category" : "reduced",
+                    "price" : 1.5,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "category" : "senior",
+                    "agefrom" : 65,
+                    "price" : 1,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "category" : "children",
+                    "price" : 0.5,
+                    "agefrom" : 6,
+                    "ageto" : 17,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "category" : "family",
+                    "price" : 6.5,
+                    "groupprice" : true,
+                    "agefrom" : 5,
+                    "ageto" : 17,
+                    "max_adult_count" : 2,
+                    "max_children_count" : 3,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "category" : "group",
+                    "price" : 12.5,
+                    "max_adultcount" : 8,
+                    "max_childrencount" : 4,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "category" : "Burgtarif",
+                    "price" : 1,
+                    "description" : "Turm (ohne Museum)"
+                  }, {
+                    "category" : "Arbeistlosentarif",
+                    "price" : 0.5,
+                    "description" : "Museum+Turm"
+                  }, {
+                    "description" : "Kinder unter 6 Jahren haben immer freien Eintritt"
+                  } ],
+                  "openinghours" : {
+                    "openingtimedate" : [ {
+                      "weekday" : "wednesday",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "20:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "thursday",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "20:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "friday",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "20:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "saturday",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "18:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "saturday",
+                      "date_from" : "01.03.2017",
+                      "date_to" : "01.09.2017",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "19:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "sunday",
+                      "date_from" : "01.03.",
+                      "date_to" : "01.09.",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "19:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "holidays",
+                      "timefrom" : "11:00:00",
+                      "timeto" : "19:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "sylvester",
+                      "date" : "",
+                      "timefrom" : "10:00:00",
+                      "timeto" : "13:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "christmas_eve",
+                      "date" : "",
+                      "timefrom" : "10:00:00",
+                      "timeto" : "13:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "first_christmas_day",
+                      "date" : "",
+                      "timefrom" : "10:00:00",
+                      "timeto" : "13:00:00",
+                      "open" : true
+                    }, {
+                      "weekday" : "second_christmas_day",
+                      "date" : "",
+                      "timefrom" : "10:00:00",
+                      "timeto" : "13:00:00",
+                      "open" : false
+                    }, {
+                      "weekday" : "new_year",
+                      "date" : "",
+                      "timefrom" : "10:00:00",
+                      "timeto" : "13:00:00",
+                      "open" : false
+                    } ],
+                    "additional_information" : "letzter Eintritt eine Stunde vor Schließung"
+                  },
+                  "tags" : [ "Freilufttheater", "Geschichts- und Gewerbemuseum", "Historische Baudenkmäler" ],
+                  "certificates" : [ "Anbieter mit Zertifizierung: 'Burgen Qualität Deutschland'" ],
+                  "accesibility_info_link" : "http://www.barrierefrei-brandenburg.de/index.php?id=dsview&tx_tmbpoisearch_pi2[poi]=11399"
+                }
+              }
+            }
+          }
+        },
+        "security" : [ ]
+      }
+    },
+    "/api/v1/tours/1" : {
+      "get" : {
+        "tags" : [ "Web" ],
+        "summary" : "Get one specific Tour",
+        "description" : "Endpoint which provides one tour specified by id",
+        "operationId" : "getOneSpecificTour",
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/Tour"
+            },
+            "examples" : {
+              "application/json" : {
+                "tour" : {
+                  "id" : 1,
+                  "name" : "Zwischen fürstlichen Schlössern und frommen Klöstern",
+                  "created_at" : "01.01.2018",
+                  "updated_at" : "08.10.2018",
+                  "status" : "active",
+                  "data_provider" : {
+                    "name" : "tmb",
+                    "address" : {
+                      "addition" : "",
+                      "street" : "Musterstr. 123",
+                      "zip" : "14567",
+                      "city" : "Potsdam",
+                      "coordinates" : {
+                        "lat" : 52.345678,
+                        "lng" : 12.345678
+                      }
+                    },
+                    "contact" : {
+                      "first_name" : "Max",
+                      "last_name" : "Mustermann",
+                      "phone" : "+4903384860004",
+                      "fax" : "",
+                      "email" : "test@test.net",
+                      "url" : "http://www.flaeming.net"
+                    },
+                    "logo" : "image_link",
+                    "description" : ""
+                  },
+                  "operating_company" : {
+                    "name" : "Tourismusverband Elbe-Elster-Land e.V.",
+                    "address" : {
+                      "addition" : "",
+                      "city" : "Bad Liebenwerda",
+                      "street" : "Markt 20",
+                      "zip" : 49240,
+                      "coordinates" : {
+                        "lat" : 51.609621155607,
+                        "lng" : 13.545282982203
+                      },
+                      "contact" : {
+                        "telephone" : "035341-30652",
+                        "e-mail" : "info@elbe-elster-land.de",
+                        "fax" : "035341-12672",
+                        "url" : "www.elbe-elster-land.de"
+                      }
+                    },
+                    "description" : ""
+                  },
+                  "regions" : [ "Elbe-Elster-Land", "Fläming", "Spreewald" ],
+                  "description" : "Die Zeit vor der Reformation war durch eine tiefe Frömmigkeit der Menschen gekennzeichnet, die sich durch den Ausbau von Klosteranlagen durch die Mönchsorden sowie herausragende Stadtpfarrkirchen mit prächtigen Altären widerspiegelt. Im Zuge der Reformation wurden sie oftmals umgenutzt oder aufgelöst. Auf dieser Rundtour liegen sieben historische Stadtkerne mit neun Schlössern und beeindruckenden Kirchen sowie heute kulturell genutzten Klosteranlagen und spannende Museen. In Jüterbog und Mühlberg/Elbe sind die bedeutendsten Zeugnisse der Reformation zu sehen und wurden mit dem Europäischen Kulturerbesiegel dafür ausgezeichnet. Beginnend im Fläming verläuft die Radroute von Jüterbog weiter Richtung Süden zur Elbe, um dann nach einem Bogen durch die Niederlausitz wieder zum Start zurückzukehren.",
+                  "thumbnail" : "thumbnail_image_url",
+                  "media_content" : [ {
+                    "link" : "image_link_1",
+                    "caption_text" : "test_1"
+                  }, {
+                    "link" : "image_link_2",
+                    "caption_text" : "test_2"
+                  } ],
+                  "type" : "Rundtour",
+                  "tags" : [ "Wald", "Seen", "Scenic Route" ],
+                  "length_km" : 296,
+                  "geometry_tour_data" : [ {
+                    "lat" : 13.5611057,
+                    "lng" : 51.6196185
+                  }, {
+                    "lat" : 13.561013,
+                    "lng" : 51.6196115
+                  }, {
+                    "lat" : 13.5609715,
+                    "lng" : 51.6196061
+                  }, {
+                    "lat" : 13.5609239,
+                    "lng" : 51.6195979
+                  }, {
+                    "lat" : 13.5597052,
+                    "lng" : 51.6193648
+                  }, {
+                    "lat" : 13.5578198,
+                    "lng" : 51.6189981
+                  }, {
+                    "lat" : 13.5575696,
+                    "lng" : 51.6189423
+                  }, {
+                    "lat" : 13.556685,
+                    "lng" : 51.618761
+                  }, {
+                    "lat" : 13.556203,
+                    "lng" : 51.6186594
+                  }, {
+                    "lat" : 13.5558976,
+                    "lng" : 51.6185816
+                  }, {
+                    "lat" : 13.5558334,
+                    "lng" : 51.6185653
+                  }, {
+                    "lat" : 13.5555942,
+                    "lng" : 51.6184528
+                  }, {
+                    "lat" : 13.5552789,
+                    "lng" : 51.618221
+                  }, {
+                    "lat" : 13.555078,
+                    "lng" : 51.6179604
+                  }, {
+                    "lat" : 13.5548018,
+                    "lng" : 51.6176019
+                  }, {
+                    "lat" : 13.5543359,
+                    "lng" : 51.6170607
+                  }, {
+                    "lat" : 13.5540635,
+                    "lng" : 51.6167449
+                  }, {
+                    "lat" : 13.5536782,
+                    "lng" : 51.6162986
+                  }, {
+                    "lat" : 13.5534934,
+                    "lng" : 51.6160701
+                  }, {
+                    "lat" : 13.5529459,
+                    "lng" : 51.6153931
+                  }, {
+                    "lat" : 13.5528031,
+                    "lng" : 51.6152165
+                  }, {
+                    "lat" : 13.5521749,
+                    "lng" : 51.6144396
+                  }, {
+                    "lat" : 13.5518759,
+                    "lng" : 51.6141053
+                  }, {
+                    "lat" : 13.5517738,
+                    "lng" : 51.613991
+                  }, {
+                    "lat" : 13.5514932,
+                    "lng" : 51.613695
+                  }, {
+                    "lat" : 13.5514355,
+                    "lng" : 51.6136475
+                  }, {
+                    "lat" : 13.551394,
+                    "lng" : 51.6136323
+                  }, {
+                    "lat" : 13.5512103,
+                    "lng" : 51.61356
+                  }, {
+                    "lat" : 13.5508876,
+                    "lng" : 51.6134375
+                  }, {
+                    "lat" : 13.5496354,
+                    "lng" : 51.6129311
+                  }, {
+                    "lat" : 13.5483462,
+                    "lng" : 51.6124562
+                  }, {
+                    "lat" : 13.5485612,
+                    "lng" : 51.612228
+                  }, {
+                    "lat" : 13.5487704,
+                    "lng" : 51.6120048
+                  }, {
+                    "lat" : 13.5489517,
+                    "lng" : 51.611826
+                  }, {
+                    "lat" : 13.5490976,
+                    "lng" : 51.6117017
+                  }, {
+                    "lat" : 13.5492693,
+                    "lng" : 51.6115485
+                  }, {
+                    "lat" : 13.5494269,
+                    "lng" : 51.6113768
+                  }, {
+                    "lat" : 13.5496247,
+                    "lng" : 51.611185
+                  }, {
+                    "lat" : 13.5497209,
+                    "lng" : 51.6112193
+                  }, {
+                    "lat" : 13.5498228,
+                    "lng" : 51.6111194
+                  }, {
+                    "lat" : 13.5498797,
+                    "lng" : 51.6110482
+                  }, {
+                    "lat" : 13.5499508,
+                    "lng" : 51.6109639
+                  }, {
+                    "lat" : 13.5499707,
+                    "lng" : 51.6109374
+                  }, {
+                    "lat" : 13.5498565,
+                    "lng" : 51.6108889
+                  }, {
+                    "lat" : 13.5496805,
+                    "lng" : 51.6108198
+                  }, {
+                    "lat" : 13.54715,
+                    "lng" : 51.6098428
+                  }, {
+                    "lat" : 13.5466764,
+                    "lng" : 51.6097099
+                  }, {
+                    "lat" : 13.5467448,
+                    "lng" : 51.6095983
+                  }, {
+                    "lat" : 13.5465832,
+                    "lng" : 51.6094985
+                  }, {
+                    "lat" : 13.5464039,
+                    "lng" : 51.6093602
+                  }, {
+                    "lat" : 13.5462247,
+                    "lng" : 51.6091782
+                  }, {
+                    "lat" : 13.5462724,
+                    "lng" : 51.6087397
+                  }, {
+                    "lat" : 13.5463789,
+                    "lng" : 51.6084657
+                  }, {
+                    "lat" : 13.5476691,
+                    "lng" : 51.6073317
+                  }, {
+                    "lat" : 13.5471051,
+                    "lng" : 51.6048246
+                  }, {
+                    "lat" : 13.54639,
+                    "lng" : 51.60153
+                  }, {
+                    "lat" : 13.5463893,
+                    "lng" : 51.6013208
+                  }, {
+                    "lat" : 13.546388,
+                    "lng" : 51.600908
+                  }, {
+                    "lat" : 13.5464039,
+                    "lng" : 51.6008296
+                  }, {
+                    "lat" : 13.5466849,
+                    "lng" : 51.5994479
+                  }, {
+                    "lat" : 13.5469172,
+                    "lng" : 51.598806
+                  }, {
+                    "lat" : 13.5472556,
+                    "lng" : 51.5978708
+                  }, {
+                    "lat" : 13.5476165,
+                    "lng" : 51.5969999
+                  }, {
+                    "lat" : 13.5476853,
+                    "lng" : 51.5968339
+                  }, {
+                    "lat" : 13.5477228,
+                    "lng" : 51.596718
+                  }, {
+                    "lat" : 13.5477945,
+                    "lng" : 51.5964956
+                  }, {
+                    "lat" : 13.5477984,
+                    "lng" : 51.5962804
+                  }, {
+                    "lat" : 13.547745,
+                    "lng" : 51.5961279
+                  }, {
+                    "lat" : 13.5476368,
+                    "lng" : 51.5958779
+                  }, {
+                    "lat" : 13.546022,
+                    "lng" : 51.5940324
+                  }, {
+                    "lat" : 13.5452528,
+                    "lng" : 51.5935572
+                  } ],
+                  "start_address" : {
+                    "addition" : "Bahnhof Doberlug-Kirchhain",
+                    "city" : "Doberlug-Kirchhain",
+                    "zip" : 32530,
+                    "street" : "Bahnhofsallee",
+                    "coordinates" : {
+                      "lat" : 51.620237992608,
+                      "lng" : 13.561093731208
+                    }
+                  },
+                  "finish_address" : {
+                    "addition" : "Bahnhof Doberlug-Kirchhain",
+                    "city" : "Doberlug-Kirchhain",
+                    "zip" : 32530,
+                    "street" : "Bahnhofsallee",
+                    "coordinates" : {
+                      "lat" : 51.620237992608,
+                      "lng" : 13.561093731208
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security" : [ ]
+      }
+    }
+  },
+  "definitions" : {
+    "Tour" : {
+      "description" : "Model for Tour",
+      "properties" : {
+        "created_at" : {
+          "type" : "string",
+          "example" : "01.01.2018",
+          "description" : "Date when tour was created in the backend database."
+        },
+        "data_provider" : {
+          "$ref" : "#/definitions/DataProvider"
+        },
+        "description" : {
+          "type" : "string",
+          "example" : "Die Zeit vor der Reformation war durch eine tiefe Frömmigkeit der Menschen gekennzeichnet, die sich durch den Ausbau von Klosteranlagen durch die Mönchsorden sowie herausragende Stadtpfarrkirchen mit prächtigen Altären widerspiegelt. Im Zuge der Reformation wurden sie oftmals umgenutzt oder aufgelöst. Auf dieser Rundtour liegen sieben historische Stadtkerne mit neun Schlössern und beeindruckenden Kirchen sowie heute kulturell genutzten Klosteranlagen und spannende Museen. In Jüterbog und Mühlberg/Elbe sind die bedeutendsten Zeugnisse der Reformation zu sehen und wurden mit dem Europäischen Kulturerbesiegel dafür ausgezeichnet. Beginnend im Fläming verläuft die Radroute von Jüterbog weiter Richtung Süden zur Elbe, um dann nach einem Bogen durch die Niederlausitz wieder zum Start zurückzukehren.",
+          "description" : "tour description"
+        },
+        "finish_address" : {
+          "$ref" : "#/definitions/FinishAddress"
+        },
+        "geometry_tour_data" : {
+          "type" : "array",
+          "description" : "Array of latitutde and longitude pairs, which represent the route on a map",
+          "items" : {
+            "$ref" : "#/definitions/GeometryTourData"
+          },
+          "example" : ""
+        },
+        "id" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : "1"
+        },
+        "length_km" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "Tour length in km",
+          "example" : "296"
+        },
+        "media_content" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/MediaContent"
+          },
+          "example" : ""
+        },
+        "name" : {
+          "type" : "string",
+          "example" : "Zwischen fürstlichen Schlössern und frommen Klöstern"
+        },
+        "operating_company" : {
+          "$ref" : "#/definitions/OperatingCompany"
+        },
+        "regions" : {
+          "type" : "array",
+          "description" : "Regions through which the tour leads.",
+          "items" : {
+            "type" : "string",
+            "example" : "[\"Elbe-Elster-Land\", \"Fläming\", \"Spreewald\"]"
+          }
+        },
+        "start_address" : {
+          "$ref" : "#/definitions/StartAddress"
+        },
+        "status" : {
+          "type" : "string",
+          "description" : "If the value is 'active' the tour must be shown in the frontend if 'inactive' it must not be shown.",
+          "example" : "active"
+        },
+        "tags" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string",
+            "example" : "[\"Wald\", \"Seen\", \"Scenic Route\"]"
+          }
+        },
+        "thumbnail" : {
+          "type" : "string",
+          "example" : "thumbnail_image_url"
+        },
+        "type" : {
+          "type" : "string",
+          "example" : "Radtour",
+          "description" : "Type of Tour. Possible Values are Radtour, Kanutour or Wandertour."
+        },
+        "updated_at" : {
+          "type" : "string",
+          "example" : "08.10.2018"
+        }
+      }
+    },
+    "Categories" : {
+      "description" : "Model for Categories",
+      "required" : [ "id" ],
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 1
+        },
+        "name" : {
+          "type" : "string",
+          "example" : "culture"
+        },
+        "sub_categories" : {
+          "type" : "array",
+          "description" : "Array of sub categories of a main catgeory.",
+          "items" : {
+            "$ref" : "#/definitions/SubCategory"
+          }
+        },
+        "tmb_id" : {
+          "type" : "integer",
+          "description" : "id of the same category inside the tmb database",
+          "format" : "int32",
+          "example" : "17"
+        }
+      }
+    },
+    "SubCategory" : {
+      "description" : "Model for SubCategories",
+      "required" : [ "id" ],
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : "8876"
+        },
+        "name" : {
+          "type" : "string",
+          "example" : "castles"
+        },
+        "sub_categories" : {
+          "type" : "array",
+          "description" : "Array of sub categories of a sub_category.",
+          "items" : {
+            "$ref" : "#/definitions/SubCategory"
+          }
+        },
+        "tmb_id" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : "32"
+        }
+      }
+    },
+    "NewsIndex" : {
+      "description" : "Model is an Array of all news items",
+      "required" : [ "news_items" ],
+      "properties" : {
+        "news_items" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/NewsItem"
+          }
+        }
+      }
+    },
+    "PointOfInterest" : {
+      "description" : "Model for PointOfInterest",
+      "required" : [ "accesibility_info_link" ],
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : "21"
+        },
+        "external_id" : {
+          "description" : "Not relevant for mobile app. Will be removed.",
+          "type" : "string",
+          "example" : "11399"
+        },
+        "created_at" : {
+          "description" : "Creation Time of POI in the Database",
+          "type" : "string",
+          "example" : "01.01.01"
+        },
+        "updated_at" : {
+          "type" : "string",
+          "example" : "01.01.01"
+        },
+        "name" : {
+          "type" : "string",
+          "example" : "Burg Rabenstein"
+        },
+        "data_provider" : {
+          "$ref" : "#/definitions/DataProvider"
+        },
+        "accesibility_info_link" : {
+          "type" : "string",
+          "example" : "http://www.barrierefrei-brandenburg.de/index.php?id=dsview&tx_tmbpoisearch_pi2[poi]=11399",
+          "description" : "Accessibilty Information URL for handicapped people"
+        },
+        "address" : {
+          "$ref" : "#/definitions/Address"
+        },
+        "category_id" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : "8876",
+          "description" : "id which links the poi to an entry in the category table"
+        },
+        "certificates" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string",
+            "example" : "Anbieter mit Zertifizierung: ''Burgen Qualität Deutschland''"
+          },
+          "description" : "If the poi has any kind of official certificate it can be found here"
+        },
+        "contact" : {
+          "$ref" : "#/definitions/Contact"
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "Description of the Point of Interest",
+          "example" : "Die Burg Rabenstein gehört zu den schönsten Burgen in Brandenburg. Im 13. Jahrhundert wurde die Anlage auf dem 153 Meter hohen \"Steilen Hagen\" das erste Mal erwähnt. Die Burg galt lange Zeit als uneinnehmbar. Zur Burganlage gehören eine Kapelle, ein Rittersaal und die Folterkammer. Im Burgvorhof befinden sich der Brunnen, die Scheune und das Backhaus. Der 30 Meter hohe Bergfried bietet eine einmalige Aussicht über den Hohen Fläming. Jedes Jahr zu Ostern findet auf Burg Rabenstein ein mittelalterliches Burgspektakel statt."
+        },
+        "location" : {
+          "$ref" : "#/definitions/Location"
+        },
+        "media_content" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/MediaContent"
+          }
+        },
+        "mobile_description" : {
+          "type" : "string",
+          "example" : "Beschreibungstext speziell für mobile Endgeräte, falls vorhanden"
+        },
+        "openinghours" : {
+          "$ref" : "#/definitions/Openinghours"
+        },
+        "operating_company" : {
+          "$ref" : "#/definitions/OperatingCompany"
+        },
+        "price" : {
+          "type" : "array",
+          "description" : "Array which holds all the price information for the poi.",
+          "items" : {
+            "$ref" : "#/definitions/Price"
+          },
+          "example" : ""
+        },
+        "status" : {
+          "type" : "string",
+          "example" : "possible values( active or inactive )",
+          "description" : "Should the poi be shown in the frontend or not."
+        },
+        "tags" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          },
+          "example" : "[\"Freilufttheater\", \"Geschichts- und Gewerbemuseum\", \"Historische Baudenkmäler\"]"
+        },
+        "thumbnail" : {
+          "type" : "string",
+          "example" : "thumbnail_image_url"
+        }
+      }
+    },
+    "TourIndex" : {
+      "description" : "Model is an array of all tours",
+      "required" : [ "tours" ],
+      "properties" : {
+        "tours" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Tour"
+          }
+        }
+      }
+    },
+    "EventIndex" : {
+      "description" : "Model is an array of all tours",
+      "required" : [ "events" ],
+      "properties" : {
+        "events" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Event"
+          }
+        }
+      }
+    },
+    "FinishAddress" : {
+      "description" : "Finish address of a tour",
+      "required" : [ "addition" ],
+      "properties" : {
+        "addition" : {
+          "type" : "string",
+          "description" : "additional address information",
+          "example" : "Bahnhof Doberlug-Kirchhain"
+        },
+        "city" : {
+          "type" : "string",
+          "example" : "Doberlug-Kirchhain"
+        },
+        "coordinates" : {
+          "$ref" : "#/definitions/Coordinates"
+        },
+        "street" : {
+          "type" : "string",
+          "example" : "Bahnhofsallee"
+        },
+        "zip" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : 32530
+        }
+      }
+    },
+    "StartAddress" : {
+      "description" : "Start address of a tour",
+      "required" : [ "addition" ],
+      "properties" : {
+        "addition" : {
+          "type" : "string",
+          "example" : "Bahnhof Doberlug-Kirchhain"
+        },
+        "city" : {
+          "type" : "string",
+          "example" : "Doberlug-Kirchhain"
+        },
+        "coordinates" : {
+          "$ref" : "#/definitions/Coordinates"
+        },
+        "street" : {
+          "type" : "string",
+          "example" : "Bahnhofsallee"
+        },
+        "zip" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : "32530"
+        }
+      }
+    },
+    "GeometryTourData" : {
+      "description" : "Array of latitutde and longitude pairs, which represent the tour's route on a map.",
+      "required" : [ "lat" ],
+      "properties" : {
+        "lat" : {
+          "type" : "number",
+          "format" : "float",
+          "x-example" : "13.5611057"
+        },
+        "lng" : {
+          "type" : "number",
+          "format" : "float",
+          "example" : "51.6196185"
+        }
+      }
+    },
+    "PointOfInterestIndex" : {
+      "description" : "Model for PointsOfInterest",
+      "required" : [ "points_of_interest" ],
+      "properties" : {
+        "points_of_interest" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/PointOfInterest"
+          }
+        }
+      }
+    },
+    "Openinghours" : {
+      "description" : "Model for Openinghours",
+      "required" : [ "additional_information" ],
+      "properties" : {
+        "additional_information" : {
+          "type" : "string",
+          "example" : "letzter Eintritt eine Stunde vor Schließung"
+        },
+        "openingtimedate" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Openingtimedate"
+          }
+        }
+      }
+    },
+    "Openingtimedate" : {
+      "description" : "Model for Openingtimedate",
+      "required" : [ "open" ],
+      "properties" : {
+        "open" : {
+          "type" : "boolean",
+          "example" : "true"
+        },
+        "timefrom" : {
+          "type" : "string",
+          "example" : "11:00:00"
+        },
+        "timeto" : {
+          "type" : "string",
+          "example" : "20:00:00"
+        },
+        "weekday" : {
+          "type" : "string",
+          "example" : "wednesday"
+        }
+      }
+    },
+    "Price" : {
+      "description" : "Model for Price",
+      "required" : [ "category" ],
+      "properties" : {
+        "category" : {
+          "type" : "string",
+          "example" : "adult",
+          "description" : "Free text category. Can be freely chosen by data provider"
+        },
+        "description" : {
+          "type" : "string",
+          "example" : "Museum+Turm",
+          "description" : "Free text type. There are no predefined types. Can be created freely by"
+        },
+        "price" : {
+          "type" : "number",
+          "format" : "float",
+          "example" : "2.5"
+        },
+        "groupprice" : {
+          "type" : "boolean",
+          "example" : false
+        },
+        "agefrom" : {
+          "type" : "number",
+          "format" : "int32",
+          "example" : 5
+        }
+      }
+    },
+    "OperatingCompany" : {
+      "description" : "Model for OperatingCompany. Person, Institution or Company responsible for a POI, Event or Tour.",
+      "required" : [ "address" ],
+      "properties" : {
+        "address" : {
+          "$ref" : "#/definitions/Address"
+        },
+        "contact" : {
+          "$ref" : "#/definitions/Contact"
+        },
+        "description" : {
+          "type" : "string",
+          "example" : ""
+        },
+        "name" : {
+          "type" : "string",
+          "example" : "Fremdenverkehrsverein \"Niemegker-Land\" e.V."
+        }
+      }
+    },
+    "GetOneSpecificEvent" : {
+      "description" : "Model for GetOneSpecificEvent",
+      "required" : [ "event" ],
+      "properties" : {
+        "event" : {
+          "$ref" : "#/definitions/Event"
+        }
+      }
+    },
+    "Event" : {
+      "description" : "Model for Event",
+      "required" : [ "address" ],
+      "properties" : {
+        "address" : {
+          "$ref" : "#/definitions/Address"
+        },
+        "barrierefrei" : {
+          "$ref" : "#/definitions/Barrierefrei"
+        },
+        "category_id" : {
+          "type" : "string"
+        },
+        "contact" : {
+          "$ref" : "#/definitions/Contact"
+        },
+        "created_at" : {
+          "type" : "string",
+          "format" : "date-time",
+          "example" : "2018-06-31 13:16:19"
+        },
+        "data_provider" : {
+          "$ref" : "#/definitions/DataProvider"
+        },
+        "dates" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Dates"
+          },
+          "example" : ""
+        },
+        "description" : {
+          "type" : "string",
+          "example" : "Mit der Naturwacht und dem Förster begeben wir uns ins Revier, um den Waldtieren auf die Spur zu kommen.\r\nWelche Tierarten gibt es im Naturpark und welche davon stehen unter Schutz? Wie sind die Lebensbedingungen? Wovon ernährt sich das Wild? Wie passt sich das Wild an seine Umgebung an und wie gehen wir damit um?\r\nIm Anschluss an die Pirsch durch Wald und Feld können Sie sich bei einem kleinen Picknick am Feuer wärmen, stärken und sich vielleicht noch etwas über das Erlebte austauschen.\r\nBitte denken Sie an warme Kleidung."
+        },
+        "highlight" : {
+          "$ref" : "#/definitions/Highlight"
+        },
+        "id" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : "2"
+        },
+        "location" : {
+          "$ref" : "#/definitions/Location"
+        },
+        "media_content" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/MediaContent"
+          }
+        },
+        "organizer" : {
+          "$ref" : "#/definitions/Organizer"
+        },
+        "parent_id" : {
+          "type" : "string",
+          "example" : ""
+        },
+        "price_information" : {
+          "type" : "string",
+          "example" : "2,50 Euro (erm. für Kinder bis 14: 1,50 Euro)"
+        },
+        "region" : {
+          "type" : "string",
+          "example" : "Fläming"
+        },
+        "repeat" : {
+          "type" : "boolean",
+          "example" : "false"
+        },
+        "repeat_duration" : {
+          "$ref" : "#/definitions/RepeatDuration"
+        },
+        "ticket_url" : {
+          "type" : "string",
+          "example" : ""
+        },
+        "title" : {
+          "type" : "string",
+          "example" : "Wildspuren"
+        },
+        "updated_at" : {
+          "type" : "string",
+          "format" : "date-time",
+          "example" : "2018-07-31 13:16:19"
+        },
+        "updated_at_tmb" : {
+          "type" : "string",
+          "format" : "date-time",
+          "example" : "2018-07-19 13:16:19"
+        },
+        "urls" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Urls"
+          },
+          "example" : ""
+        }
+      }
+    },
+    "Location" : {
+      "description" : "Model for Location",
+      "required" : [ "coordinates" ],
+      "properties" : {
+        "coordinates" : {
+          "$ref" : "#/definitions/Coordinates"
+        },
+        "country" : {
+          "type" : "string",
+          "example" : "Germany"
+        },
+        "department" : {
+          "type" : "string",
+          "example" : "Niemegk"
+        },
+        "district" : {
+          "type" : "string",
+          "example" : "Potsdam-Mittelmark"
+        },
+        "id" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : "3581"
+        },
+        "name" : {
+          "type" : "string",
+          "example" : "Raben"
+        },
+        "region" : {
+          "type" : "string",
+          "example" : "Fläming"
+        },
+        "state" : {
+          "type" : "string",
+          "example" : "Brandenburg"
+        }
+      }
+    },
+    "Organizer" : {
+      "description" : "Model for Organizer",
+      "required" : [ "address" ],
+      "properties" : {
+        "address" : {
+          "$ref" : "#/definitions/Address"
+        },
+        "company_name" : {
+          "type" : "string",
+          "example" : "Naturparkzentrum Hoher Fläming"
+        },
+        "contact" : {
+          "$ref" : "#/definitions/Contact"
+        }
+      }
+    },
+    "Highlight" : {
+      "description" : "Model for Highlight",
+      "required" : [ "event" ],
+      "properties" : {
+        "event" : {
+          "type" : "boolean",
+          "example" : "false"
+        },
+        "holiday" : {
+          "type" : "boolean",
+          "example" : "false"
+        },
+        "local" : {
+          "type" : "boolean",
+          "example" : "false"
+        },
+        "monthly" : {
+          "type" : "boolean",
+          "example" : "false"
+        },
+        "regional" : {
+          "type" : "boolean",
+          "example" : "false"
+        }
+      }
+    },
+    "Urls" : {
+      "description" : "Model for Urls",
+      "required" : [ "description" ],
+      "properties" : {
+        "description" : {
+          "type" : "string",
+          "example" : "Naturpark Hoher Fläming"
+        },
+        "url" : {
+          "type" : "string",
+          "example" : "http://www.hoher-flaeming-naturpark.de"
+        }
+      }
+    },
+    "RepeatDuration" : {
+      "description" : "Model for RepeatDuration",
+      "required" : [ "end" ],
+      "properties" : {
+        "end" : {
+          "type" : "string",
+          "example" : ""
+        },
+        "every_year" : {
+          "type" : "string",
+          "example" : ""
+        },
+        "start" : {
+          "type" : "string",
+          "example" : ""
+        }
+      }
+    },
+    "Dates" : {
+      "description" : "Model for Dates",
+      "required" : [ "date_end" ],
+      "properties" : {
+        "date_end" : {
+          "type" : "string",
+          "format" : "date",
+          "example" : "2019-02-16"
+        },
+        "date_start" : {
+          "type" : "string",
+          "format" : "date",
+          "example" : "2019-02-16"
+        },
+        "time_description_de" : {
+          "type" : "string",
+          "example" : ""
+        },
+        "time_description_en" : {
+          "type" : "string",
+          "example" : ""
+        },
+        "time_description_pl" : {
+          "type" : "string",
+          "example" : ""
+        },
+        "time_end" : {
+          "type" : "string",
+          "example" : "18:00:00"
+        },
+        "time_start" : {
+          "type" : "string",
+          "example" : "13:00:00"
+        },
+        "use_only_time_description" : {
+          "type" : "boolean",
+          "example" : "false"
+        }
+      }
+    },
+    "Barrierefrei" : {
+      "description" : "Model for Barrierefrei",
+      "required" : [ "description" ],
+      "properties" : {
+        "description" : {
+          "type" : "string",
+          "example" : ""
+        },
+        "types" : {
+          "type" : "string",
+          "example" : ""
+        },
+        "url" : {
+          "type" : "string",
+          "example" : ""
+        },
+        "url_description" : {
+          "type" : "string",
+          "example" : ""
+        }
+      }
+    },
+    "GetOneNews" : {
+      "description" : "Model for GetOneNews",
+      "required" : [ "news_item" ],
+      "properties" : {
+        "news_item" : {
+          "$ref" : "#/definitions/NewsItem"
+        }
+      }
+    },
+    "NewsItem" : {
+      "description" : "Model for NewsItem",
+      "required" : [ "address" ],
+      "properties" : {
+        "address" : {
+          "$ref" : "#/definitions/Address"
+        },
+        "author" : {
+          "type" : "string",
+          "example" : "Tim Test"
+        },
+        "blocks" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Blocks"
+          },
+          "example" : ""
+        },
+        "characters_to_be_shown" : {
+          "type" : "string",
+          "example" : "",
+          "description" : "If the value is bigger than 0, this property describes how many characters of the news item(first block) are shown as teaser instead of the full version. The teaser will then link to an external full article url."
+        },
+        "data_provider" : {
+          "$ref" : "#/definitions/DataProvider"
+        },
+        "full_version" : {
+          "type" : "boolean",
+          "example" : "true",
+          "description" : "Is this version of the news item the full version of itself or not."
+        },
+        "id" : {
+          "type" : "integer",
+          "format" : "int32",
+          "example" : "54"
+        },
+        "original_article_url" : {
+          "type" : "string",
+          "example" : "http://www.maz-online.de/Lokales/Ostprignitz-Ruppin/Neuruppin/Fontane-Therme-Fontane-Doener-Fontane-Kuchen-Hier-steckt-ueberall-der-Dichter-aus-Brandenburg-drin",
+          "description" : "URL for the original article in the MAZ"
+        },
+        "publication_date" : {
+          "type" : "string",
+          "example" : "",
+          "description" : "Date when the news item should be published"
+        },
+        "published_date" : {
+          "$ref" : "#/definitions/PublishedDate"
+        },
+        "show_publish_date" : {
+          "type" : "boolean",
+          "example" : "true",
+          "description" : "Should the published_date be shown"
+        },
+        "type" : {
+          "type" : "string",
+          "example" : "news article",
+          "description" : "Specifies the type of the news item."
+        }
+      }
+    },
+    "Blocks" : {
+      "description" : "Model for Blocks",
+      "required" : [ "body" ],
+      "properties" : {
+        "body" : {
+          "type" : "string",
+          "description" : "Main text part of the content block.",
+          "example" : "<p>Das Märkische hat Fontane berühmt gemacht, vor allem mit seinen „Wanderungen durch die <a href=\"http://multimedia.maz-online.de/wanderungen-durch-die-mark-brandenburg-auf-den-spuren-von-theodor-fontane\" target=\"_self\">Mark Brandenburg</a>“ und seinem Spätwerk „Der Stechlin“ (1897). Es ist die <a href=\"\" target=\"_self\">Heimat Fontanes</a>. In Neuruppin kam er als Sohn eines Apothekers hugenottischer Abstammung zur Welt. In der Fontane-Stadt gibt es eine Fontane-Apotheke, Fontane-Döner, Fontane-Festspiele, eine Fontane-Buchhandlung, die Fontane-Therme, den Kindergarten Fontaneknirpse, den Keglerverein Fontanespatzen und im Weinhaus am Markt den Wein „Edition Fontane“. Im Jahr von Fontanes 200. Geburtstag hat aber nicht nur Neuruppin Fontane-Spezialitäten zu bieten – <a href=\"\" target=\"_blank\">dabei ist das Label gar nicht so ohne weiteres erlaubt</a>. Unsere Fotostrecke zeigt, wo noch überall Fontane zu finden ist – von seiner Wirkstätte Brandenburg bis nach Asien: </p><p><object type=\"gallery\">23665163</object></p><p><strong>Haben Sie noch etwas entdeckt?</strong> Dann schreiben Sie uns eine Mail an <a href=\"mailto:online@maz-online.de\" target=\"_blank\">online@maz-online.de</a>!</p><p><strong>Das könnte Sie auch interessieren:</strong></p><p><ul>\n<li><p><a href=\"\" target=\"_blank\">Vorsicht bei Fontane-Werbung: Markenrechts-Verletzungen drohen</a></p></li>\n<li><p><a href=\"\" target=\"_blank\">MAZ-Special zum 200. Geburtstag: Alles zum Fontane-Jahr in Brandenburg</a></p></li>\n<li><p><a href=\"http://multimedia.maz-online.de/wanderungen-durch-die-mark-brandenburg-auf-den-spuren-von-theodor-fontane\" target=\"_blank\">Multimedia-Story: Auf Fontanes Spuren durch die Mark Brandenburg wandern</a></p></li>\n<li><p><a href=\"\" target=\"_blank\">Tolle Bustouren: Auf Entdeckungsreise mit Fontane</a></p></li>\n</ul></p><p><em>Von MAZonline</em></p>\n"
+        },
+        "intro" : {
+          "type" : "string",
+          "description" : "Intro to the article. Normally in bold letters",
+          "example" : "<p>Zum 200. Geburtstag von Theodor Fontane haben wir uns mal umgesehen, was eigentlich alles nach dem märkischen Schriftsteller benannt ist – und sind nicht nur in Brandenburg fündig geworden.</p><p><!-- Methode uuid: \"5ff95920-4f0c-11e9-8de8-e140b6794626\"--></p>\n"
+        },
+        "media_content" : {
+          "type" : "array",
+          "description" : "Array of Media Items which build a data slider in the frontend. Exception are items with type 'background'. They are used as a background item(image or video). Array could for instance result in a pure image gallery or a mixed media slider.",
+          "items" : {
+            "$ref" : "#/definitions/MediaContent"
+          }
+        },
+        "title" : {
+          "type" : "string",
+          "example" : "Döner, Sprudel, Graffiti: Hier steckt überall Fontane drin"
+        }
+      }
+    },
+    "MediaContent" : {
+      "description" : "Model for a single MediaContent",
+      "required" : [ "caption" ],
+      "properties" : {
+        "caption" : {
+          "type" : "string",
+          "example" : "<p>Vor allem in seiner Geburtsstadt Neuruppin ist vieles nach dem Schriftsteller benannt.</p>\n"
+        },
+        "caption_text" : {
+          "type" : "string",
+          "example" : "Damhirsch"
+        },
+        "copyright" : {
+          "type" : "string",
+          "example" : "MAZ"
+        },
+        "height" : {
+          "type" : "string",
+          "example" : "513"
+        },
+        "link" : {
+          "type" : "string",
+          "example" : "http://eingabe.events-in-brandenburg.de/images/itempics/4/2/2/item_457224_pic_1_medium.jpg"
+        },
+        "type" : {
+          "type" : "string",
+          "example" : "image"
+        },
+        "url" : {
+          "type" : "string",
+          "example" : "/var/storage/images/maz/brandenburg/fontane-therme-fontane-doener-fontane-kuchen-hier-steckt-ueberall-der-dichter-aus-brandenburg-drin/716717881-3-ger-DE/Doener-Sprudel-Graffiti-Hier-steckt-ueberall-Fontane-drin.jpg"
+        },
+        "width" : {
+          "type" : "string",
+          "example" : "768"
+        }
+      }
+    },
+    "PublishedDate" : {
+      "description" : "Model for PublishedDate",
+      "required" : [ "date" ],
+      "properties" : {
+        "date" : {
+          "type" : "string",
+          "format" : "date-time",
+          "example" : "2019-03-30 04:39:53.000000"
+        },
+        "timezone" : {
+          "type" : "string",
+          "example" : "+00:00"
+        }
+      }
+    },
+    "DataProvider" : {
+      "description" : "Institution, company or person who provided the resource(e.g poi or news_item) data for the app",
+      "required" : [ "address" ],
+      "properties" : {
+        "address" : {
+          "$ref" : "#/definitions/Address"
+        },
+        "contact" : {
+          "$ref" : "#/definitions/Contact"
+        },
+        "description" : {
+          "type" : "string",
+          "example" : "Die Daten dieser Sehenswürdigkeit wurde Ihnen bereitgestellt von"
+        },
+        "logo" : {
+          "type" : "string",
+          "example" : "https://www.example.com/image_link.jpg",
+          "description" : "image-url for logo of data provider"
+        },
+        "name" : {
+          "type" : "string",
+          "example" : "Tourismusmarketing Brandenburg"
+        }
+      }
+    },
+    "Contact" : {
+      "description" : "Model that holds contact information for a resource. Used whereever a",
+      "required" : [ "e-mail" ],
+      "properties" : {
+        "e-mail" : {
+          "type" : "string",
+          "example" : "info@burgrabenstein.de"
+        },
+        "fax" : {
+          "type" : "string",
+          "example" : "+4903384860005"
+        },
+        "first_name" : {
+          "type" : "string",
+          "example" : "max"
+        },
+        "last_name" : {
+          "type" : "string",
+          "example" : "mustermann"
+        },
+        "phone" : {
+          "type" : "string",
+          "example" : "+4903384860004"
+        },
+        "url" : {
+          "type" : "string",
+          "example" : "http://www.flaeming.net"
+        }
+      }
+    },
+    "Address" : {
+      "description" : "Model for Address. Used wherever an address is needed",
+      "required" : [ "addition" ],
+      "properties" : {
+        "addition" : {
+          "type" : "string",
+          "example" : "",
+          "description" : "Additional Information for address"
+        },
+        "city" : {
+          "type" : "string",
+          "example" : "Potsdam"
+        },
+        "coordinates" : {
+          "$ref" : "#/definitions/Coordinates"
+        },
+        "street" : {
+          "type" : "string",
+          "example" : "Musterstr. 123"
+        },
+        "zip" : {
+          "type" : "string",
+          "example" : "14567"
+        }
+      }
+    },
+    "Coordinates" : {
+      "description" : "latitude and longitude coordinates which represent the address on a map.",
+      "required" : [ "lat" ],
+      "properties" : {
+        "lat" : {
+          "type" : "number",
+          "format" : "float",
+          "example" : "52.345678"
+        },
+        "lng" : {
+          "type" : "number",
+          "format" : "float",
+          "example" : "12.345678"
+        }
+      }
+    }
+  },
+  "securityDefinitions" : { },
+  "security" : [ ],
+  "tags" : [ {
+    "name" : "Web",
+    "description" : "Operations about Web"
+  } ]
+}
