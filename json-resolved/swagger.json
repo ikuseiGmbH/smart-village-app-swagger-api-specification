@@ -2241,11 +2241,6 @@
     "Openingtimedate" : {
       "required" : [ "open" ],
       "properties" : {
-        "open" : {
-          "type" : "boolean",
-          "example" : true,
-          "description" : "Only if the value is true the poi"
-        },
         "timefrom" : {
           "type" : "string",
           "example" : "11:00:00"
@@ -2258,6 +2253,11 @@
           "type" : "string",
           "example" : "wednesday",
           "description" : "specifies a"
+        },
+        "open" : {
+          "type" : "boolean",
+          "example" : true,
+          "description" : "Only if the value is true the poi is openeed on the above specified weekday."
         }
       },
       "description" : "Model for Openingtimedate for"
