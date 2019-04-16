@@ -1135,7 +1135,7 @@
               }
             },
             "schema" : {
-              "$ref" : "#/definitions/GetOneNews"
+              "$ref" : "#/definitions/NewsItem"
             }
           }
         },
@@ -2489,7 +2489,7 @@
           "$ref" : "#/definitions/Contact"
         }
       },
-      "description" : "Model for Organizer"
+      "description" : "Model for Organizer of an event"
     },
     "Highlight" : {
       "required" : [ "event" ],
@@ -2515,7 +2515,7 @@
           "example" : false
         }
       },
-      "description" : "Model for Highlight"
+      "description" : "Model for Highlight. Specifies if the event is a higlight."
     },
     "Urls" : {
       "required" : [ "description" ],
@@ -2606,16 +2606,7 @@
           "example" : ""
         }
       },
-      "description" : "Model for Barrierefrei"
-    },
-    "GetOneNews" : {
-      "required" : [ "news_item" ],
-      "properties" : {
-        "news_item" : {
-          "$ref" : "#/definitions/NewsItem"
-        }
-      },
-      "description" : "Model for GetOneNews"
+      "description" : "Model for Barrierefrei. Accesibility information for handicapped people for the event."
     },
     "NewsItem" : {
       "required" : [ "address" ],
@@ -2730,7 +2721,8 @@
         },
         "type" : {
           "type" : "string",
-          "example" : "image"
+          "example" : "image",
+          "description" : "Media content items can be of type image, background, audio or video"
         },
         "url" : {
           "type" : "string",
