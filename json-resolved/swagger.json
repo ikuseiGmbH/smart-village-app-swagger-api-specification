@@ -2393,15 +2393,18 @@
         },
         "price_information" : {
           "type" : "string",
-          "example" : "2,50 Euro (erm. für Kinder bis 14: 1,50 Euro)"
+          "example" : "2,50 Euro (erm. für Kinder bis 14: 1,50 Euro)",
+          "description" : "Price information. Free text. TODO! Should be a Price object."
         },
         "region" : {
           "type" : "string",
-          "example" : "Fläming"
+          "example" : "Fläming",
+          "description" : "Region inside Brandenburg where the event takes place."
         },
         "repeat" : {
           "type" : "boolean",
-          "example" : false
+          "example" : false,
+          "description" : "if true, this event is an event repeated on a regular basis."
         },
         "repeat_duration" : {
           "$ref" : "#/definitions/RepeatDuration"
@@ -2531,60 +2534,57 @@
     "RepeatDuration" : {
       "required" : [ "end" ],
       "properties" : {
+        "start" : {
+          "type" : "string",
+          "example" : ""
+        },
         "end" : {
           "type" : "string",
           "example" : ""
         },
         "every_year" : {
-          "type" : "string",
-          "example" : ""
-        },
-        "start" : {
-          "type" : "string",
-          "example" : ""
+          "type" : "boolean",
+          "example" : true,
+          "description" : "If true  the event will take place during a certain period of time every year. That means that start and end date will not specify a year. If they do specify a year it will be ignored."
         }
       },
-      "description" : "Model for RepeatDuration"
+      "description" : "Model for RepeatDuration. Specifies the period in which the regular(repeated) event takes place."
     },
     "Dates" : {
-      "required" : [ "date_end" ],
+      "required" : [ "date_end", "date_start" ],
       "properties" : {
-        "date_end" : {
-          "type" : "string",
-          "format" : "date",
-          "example" : "2019-02-16"
-        },
         "date_start" : {
           "type" : "string",
           "format" : "date",
           "example" : "2019-02-16"
         },
-        "time_description_de" : {
+        "date_end" : {
           "type" : "string",
-          "example" : ""
-        },
-        "time_description_en" : {
-          "type" : "string",
-          "example" : ""
-        },
-        "time_description_pl" : {
-          "type" : "string",
-          "example" : ""
-        },
-        "time_end" : {
-          "type" : "string",
-          "example" : "18:00:00"
+          "format" : "date",
+          "example" : "2019-02-16"
         },
         "time_start" : {
           "type" : "string",
+          "format" : "time",
           "example" : "13:00:00"
+        },
+        "time_end" : {
+          "type" : "string",
+          "format" : "time",
+          "example" : "18:00:00"
+        },
+        "time_description" : {
+          "type" : "string",
+          "example" : "Um Anmeldung bis zum 10.02.2019 wird gebeten.",
+          "description" : "Additional information for the date and time information e.g \"Einlass ab\" or \"Anmeldung bis\"."
         },
         "use_only_time_description" : {
           "type" : "boolean",
-          "example" : false
+          "example" : false,
+          "description" : "If true times and dates are ignored and only the time description will be used."
         }
       },
-      "description" : "Model for Dates"
+      "description" : "Model for Dates. Specifies the dates for an event."
     },
     "Barrierefrei" : {
       "required" : [ "description" ],
