@@ -99,7 +99,7 @@
                   "title" : "Wildspuren",
                   "description" : "Mit der Naturwacht und dem Förster begeben wir uns ins Revier, um den Waldtieren auf die Spur zu kommen.\nWelche Tierarten gibt es im Naturpark und welche davon stehen unter Schutz? Wie sind die Lebensbedingungen? Wovon ernährt sich das Wild? Wie passt sich das Wild an seine Umgebung an und wie gehen wir damit um?\nIm Anschluss an die Pirsch durch Wald und Feld können Sie sich bei einem kleinen Picknick am Feuer wärmen, stärken und sich vielleicht noch etwas über das Erlebte austauschen.\nBitte denken Sie an warme Kleidung.",
                   "price_information" : "2,50 Euro (erm. für Kinder bis 14: 1,50 Euro)",
-                  "category_id" : "",
+                  "category_id" : 23,
                   "ticket_url" : "",
                   "region" : "Fläming",
                   "barrierefrei" : {
