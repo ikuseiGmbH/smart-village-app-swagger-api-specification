@@ -610,8 +610,8 @@
                     "street" : "Zur Burg 49",
                     "zip" : 14823,
                     "coordinates" : {
-                      "lat" : 3334076,
-                      "lng" : 5767630
+                      "lat" : 52.345678,
+                      "lng" : 12.345678
                     }
                   },
                   "contact" : {
@@ -715,8 +715,8 @@
                   }, {
                     "description" : "Kinder unter 6 Jahren haben immer freien Eintritt"
                   } ],
-                  "openinghours" : {
-                    "openingtimedate" : [ {
+                  "opening_hours" : {
+                    "days" : [ {
                       "weekday" : "wednesday",
                       "timefrom" : "11:00:00",
                       "timeto" : "20:00:00",
