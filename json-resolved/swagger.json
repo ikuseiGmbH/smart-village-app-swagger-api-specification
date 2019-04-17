@@ -1311,8 +1311,8 @@
                   "description" : "Die Burg Rabenstein gehört zu den schönsten Burgen in Brandenburg. Im 13. Jahrhundert wurde die Anlage auf dem 153 Meter hohen \"Steilen Hagen\" das erste Mal erwähnt. Die Burg galt lange Zeit als uneinnehmbar. Zur Burganlage gehören eine Kapelle, ein Rittersaal und die Folterkammer. Im Burgvorhof befinden sich der Brunnen, die Scheune und das Backhaus. Der 30 Meter hohe Bergfried bietet eine einmalige Aussicht über den Hohen Fläming. Jedes Jahr zu Ostern findet auf Burg Rabenstein ein mittelalterliches Burgspektakel statt.",
                   "mobile_description" : "Beschreibungstext speziell für mobile Endgeräte, falls vorhanden",
                   "category_id" : 8876,
-                  "created_at" : "01.01.01",
-                  "updated_at" : "01.01.01",
+                  "created_at" : "2018-01-01 19:16:19",
+                  "updated_at" : "2001-01-01 13:16:19",
                   "status" : "active",
                   "data_provider" : {
                     "name" : "tmb",
