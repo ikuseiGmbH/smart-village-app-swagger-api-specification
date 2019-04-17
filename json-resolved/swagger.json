@@ -234,19 +234,23 @@
                   "updated_at_tmb" : "2018-07-31 13:16:19",
                   "dates" : [ {
                     "date_start" : "2019-02-16",
-                    "time_start" : "13:00:00",
                     "date_end" : "2019-02-16",
+                    "time_start" : "13:00:00",
                     "time_end" : "18:00:00",
                     "use_only_time_description" : false
                   }, {
                     "date_start" : "2019-02-17",
-                    "time_start" : "13:00:00",
                     "date_end" : "2019-03-16",
+                    "time_start" : "13:00:00",
                     "time_end" : "18:00:00",
                     "use_only_time_description" : false
                   } ],
-                  "repeat" : false,
-                  "repeat_duration" : { },
+                  "repeat" : true,
+                  "repeat_duration" : {
+                    "start" : "01.03.",
+                    "end" : "01.09.",
+                    "every_year" : true
+                  },
                   "urls" : [ {
                     "url" : "http://www.hoher-flaeming-naturpark.de",
                     "description" : "Naturpark Hoher Fläming"
