@@ -102,7 +102,7 @@
                   "category_id" : 23,
                   "ticket_url" : "",
                   "region" : "Fläming",
-                  "accesibility_information" : {
+                  "accessibility_information" : {
                     "description" : "",
                     "url" : "",
                     "url_description" : "",
@@ -223,7 +223,7 @@
                   "category_id" : "",
                   "ticket_url" : "",
                   "region" : "Fläming",
-                  "accesibility_information" : {
+                  "accessibility_information" : {
                     "description" : "",
                     "url" : "",
                     "url_description" : "",
@@ -1189,7 +1189,7 @@
                   "category_id" : "",
                   "ticket_url" : "",
                   "region" : "Fläming",
-                  "accesibility_information" : {
+                  "accessibility_information" : {
                     "description" : "",
                     "url" : "",
                     "url_description" : "",
@@ -1556,7 +1556,12 @@
                   },
                   "tags" : [ "Freilufttheater", "Geschichts- und Gewerbemuseum", "Historische Baudenkmäler" ],
                   "certificates" : [ "Anbieter mit Zertifizierung: 'Burgen Qualität Deutschland'" ],
-                  "accesibility_info_link" : "http://www.barrierefrei-brandenburg.de/index.php?id=dsview&tx_tmbpoisearch_pi2[poi]=11399"
+                  "accessibility_information" : {
+                    "description" : "",
+                    "url" : "http://www.barrierefrei-brandenburg.de/index.php?id=dsview&tx_tmbpoisearch_pi2[poi]=11399",
+                    "url_description" : "",
+                    "types" : ""
+                  }
                 }
               }
             },
@@ -2049,7 +2054,6 @@
       "description" : "Model is an Array of all news items"
     },
     "PointOfInterest" : {
-      "required" : [ "accesibility_info_link" ],
       "properties" : {
         "id" : {
           "type" : "integer",
@@ -2077,10 +2081,8 @@
         "data_provider" : {
           "$ref" : "#/definitions/DataProvider"
         },
-        "accesibility_info_link" : {
-          "type" : "string",
-          "example" : "http://www.barrierefrei-brandenburg.de/index.php?id=dsview&tx_tmbpoisearch_pi2[poi]=11399",
-          "description" : "Accessibilty Information URL for handicapped people"
+        "accessibility_information" : {
+          "$ref" : "#/definitions/AccessibilityInformation"
         },
         "address" : {
           "$ref" : "#/definitions/Address"
