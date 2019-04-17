@@ -392,10 +392,7 @@
                   "original_article_url" : "http://www.maz-online.de/Lokales/Ostprignitz-Ruppin/Neuruppin/Fontane-Therme-Fontane-Doener-Fontane-Kuchen-Hier-steckt-ueberall-der-Dichter-aus-Brandenburg-drin",
                   "type" : "news article",
                   "full_version" : true,
-                  "published_date" : {
-                    "date" : "2019-03-30 04:39:53.000000",
-                    "timezone" : "+00:00"
-                  },
+                  "published_at" : "2018-01-01 19:16:19",
                   "show_publish_date" : true,
                   "address" : {
                     "addition" : "",
@@ -849,7 +846,7 @@
                     "first_name" : "Max",
                     "last_name" : "Mustermann",
                     "telephone" : "033848-60221",
-                    "e-mail" : "info@burgrabenstein.de",
+                    "email" : "info@burgrabenstein.de",
                     "fax" : "033848-60230",
                     "url" : "www.burgrabenstein.de"
                   },
@@ -869,7 +866,7 @@
                       "first_name" : "Max",
                       "last_name" : "Mustermann",
                       "telephone" : "033848-60221",
-                      "e-mail" : "info@burgrabenstein.de",
+                      "email" : "info@burgrabenstein.de",
                       "fax" : "033848-60230",
                       "url" : "www.burgrabenstein.de"
                     }
@@ -1077,7 +1074,7 @@
             "examples" : {
               "application/json" : {
                 "news_item" : {
-                  "id" : 54,
+                  "id" : 3,
                   "author" : "Tim Test",
                   "data_provider" : {
                     "name" : "MAZ",
@@ -1105,7 +1102,7 @@
                   "original_article_url" : "http://www.maz-online.de/Lokales/Ostprignitz-Ruppin/Neuruppin/Fontane-Therme-Fontane-Doener-Fontane-Kuchen-Hier-steckt-ueberall-der-Dichter-aus-Brandenburg-drin",
                   "type" : "news article",
                   "full_version" : true,
-                  "published_date" : {
+                  "published_at" : {
                     "date" : "2019-03-30 04:39:53.000000",
                     "timezone" : "+00:00"
                   },
@@ -1626,7 +1623,7 @@
                       },
                       "contact" : {
                         "telephone" : "035341-30652",
-                        "e-mail" : "info@elbe-elster-land.de",
+                        "email" : "info@elbe-elster-land.de",
                         "fax" : "035341-12672",
                         "url" : "www.elbe-elster-land.de"
                       }
@@ -2722,13 +2719,10 @@
           "example" : "",
           "description" : "Date when the news item should be published"
         },
-        "published_date" : {
-          "$ref" : "#/definitions/PublishedDate"
-        },
-        "show_publish_date" : {
-          "type" : "boolean",
-          "example" : true,
-          "description" : "Should the published_date be shown"
+        "published_at" : {
+          "type" : "string",
+          "format" : "datetime",
+          "example" : "2018-01-01 19:16:19"
         },
         "type" : {
           "type" : "string",
@@ -2804,21 +2798,6 @@
       },
       "description" : "Model for a single MediaContent"
     },
-    "PublishedDate" : {
-      "required" : [ "date" ],
-      "properties" : {
-        "date" : {
-          "type" : "string",
-          "format" : "date-time",
-          "example" : "2019-03-30 04:39:53.000000"
-        },
-        "timezone" : {
-          "type" : "string",
-          "example" : "+00:00"
-        }
-      },
-      "description" : "Model for PublishedDate. TODO in postman collection ändern und hier anpassen. Nicht als Objekt sondern als einfaches Feld."
-    },
     "DataProvider" : {
       "required" : [ "address" ],
       "properties" : {
@@ -2845,9 +2824,8 @@
       "description" : "Institution, company or person who provided the resource(e.g poi or news_item) data for the app"
     },
     "Contact" : {
-      "required" : [ "e-mail" ],
       "properties" : {
-        "e-mail" : {
+        "email" : {
           "type" : "string",
           "example" : "info@burgrabenstein.de"
         },
