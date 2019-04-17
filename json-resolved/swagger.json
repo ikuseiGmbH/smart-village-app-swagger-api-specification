@@ -799,7 +799,12 @@
                   },
                   "tags" : [ "Freilufttheater", "Geschichts- und Gewerbemuseum", "Historische Baudenkmäler" ],
                   "certificates" : [ "Anbieter mit Zertifizierung: 'Burgen Qualität Deutschland'" ],
-                  "accesibility_info_link" : "http://www.barrierefrei-brandenburg.de/index.php?id=dsview&tx_tmbpoisearch_pi2[poi]=11399"
+                  "accessibility_information" : {
+                    "description" : "",
+                    "url" : "http://www.barrierefrei-brandenburg.de/index.php?id=dsview&tx_tmbpoisearch_pi2[poi]=11399",
+                    "url_description" : "",
+                    "types" : ""
+                  }
                 }, {
                   "id" : 22,
                   "name" : "Burg Adlerstein",
@@ -1030,7 +1035,12 @@
                   },
                   "tags" : [ "Freilufttheater", "Geschichts- und Gewerbemuseum", "Historische Baudenkmäler" ],
                   "certificates" : [ "Anbieter mit Zertifizierung: 'Burgen Qualität Deutschland'" ],
-                  "accesibility_info_link" : "http://www.barrierefrei-brandenburg.de/index.php?id=dsview&tx_tmbpoisearch_pi2[poi]=11399"
+                  "accessibility_information" : {
+                    "description" : "",
+                    "url" : "http://www.barrierefrei-brandenburg.de/index.php?id=dsview&tx_tmbpoisearch_pi2[poi]=11399",
+                    "url_description" : "",
+                    "types" : ""
+                  }
                 } ]
               }
             },
