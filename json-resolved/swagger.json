@@ -1909,7 +1909,7 @@
       "properties" : {
         "created_at" : {
           "type" : "string",
-          "example" : "01.01.2018",
+          "example" : "2017-07-31 13:16:19",
           "description" : "Date when tour was created in the backend database."
         },
         "data_provider" : {
