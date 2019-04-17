@@ -102,7 +102,7 @@
                   "category_id" : 23,
                   "ticket_url" : "",
                   "region" : "Fläming",
-                  "barrierefrei" : {
+                  "accesibility_information" : {
                     "description" : "",
                     "url" : "",
                     "url_description" : "",
@@ -223,7 +223,7 @@
                   "category_id" : "",
                   "ticket_url" : "",
                   "region" : "Fläming",
-                  "barrierefrei" : {
+                  "accesibility_information" : {
                     "description" : "",
                     "url" : "",
                     "url_description" : "",
