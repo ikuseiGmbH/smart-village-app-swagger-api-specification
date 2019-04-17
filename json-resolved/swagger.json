@@ -55,7 +55,7 @@
                   "name" : "staying_overnight",
                   "id" : 2,
                   "tmb_id" : 19,
-                  "sub_categories" : [ {
+                  "categories" : [ {
                     "name" : "hotels",
                     "id" : 457,
                     "tmb_id" : 53466
@@ -107,8 +107,8 @@
                     "url_description" : "",
                     "types" : ""
                   },
-                  "created_at" : "date",
-                  "updated_at" : "date",
+                  "created_at" : "2017-07-31 13:16:19",
+                  "updated_at" : "2018-07-31 16:16:19",
                   "updated_at_tmb" : "2018-07-31 13:16:19",
                   "dates" : [ {
                     "date_start" : "2019-02-16",
@@ -2007,11 +2007,11 @@
           "type" : "string",
           "example" : "culture"
         },
-        "sub_categories" : {
+        "categories" : {
           "type" : "array",
           "description" : "Array of sub categories of a main catgeory.",
           "items" : {
-            "$ref" : "#/definitions/SubCategory"
+            "$ref" : "#/definitions/Category"
           }
         },
         "tmb_id" : {
@@ -2023,7 +2023,7 @@
       },
       "description" : "Model for Categories"
     },
-    "SubCategory" : {
+    "Category" : {
       "required" : [ "id" ],
       "properties" : {
         "id" : {
@@ -2035,11 +2035,11 @@
           "type" : "string",
           "example" : "castles"
         },
-        "sub_categories" : {
+        "categories" : {
           "type" : "array",
-          "description" : "Array of sub categories of a sub_category.",
+          "description" : "Array of sub categories of a category.",
           "items" : {
-            "$ref" : "#/definitions/SubCategory"
+            "$ref" : "#/definitions/Category"
           }
         },
         "tmb_id" : {
