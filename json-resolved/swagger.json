@@ -1189,7 +1189,7 @@
                   "category_id" : "",
                   "ticket_url" : "",
                   "region" : "Fläming",
-                  "barrierefrei" : {
+                  "accesibility_information" : {
                     "description" : "",
                     "url" : "",
                     "url_description" : "",
@@ -2404,8 +2404,8 @@
         "address" : {
           "$ref" : "#/definitions/Address"
         },
-        "barrierefrei" : {
-          "$ref" : "#/definitions/Barrierefrei"
+        "accessibility_information" : {
+          "$ref" : "#/definitions/AccessibilityInformation"
         },
         "category_id" : {
           "type" : "string",
@@ -2652,7 +2652,7 @@
       },
       "description" : "Model for Dates. Specifies the dates for an event."
     },
-    "Barrierefrei" : {
+    "AccessibilityInformation" : {
       "required" : [ "description" ],
       "properties" : {
         "description" : {
@@ -2672,7 +2672,7 @@
           "example" : ""
         }
       },
-      "description" : "Model for Barrierefrei. Accesibility information for handicapped people for the event."
+      "description" : "Accesibility information for handicapped people for an event or poi."
     },
     "NewsItem" : {
       "required" : [ "address" ],
