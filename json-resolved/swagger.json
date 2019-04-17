@@ -1999,16 +1999,16 @@
       "properties" : {
         "categories" : {
           "type" : "array",
-          "description" : "Array of sub categories of a main catgeory.",
+          "description" : "Array of main categories.",
           "items" : {
             "$ref" : "#/definitions/Category"
           }
         }
       },
-      "description" : "Model for Categories"
+      "description" : "Model for the Category Tree."
     },
     "Category" : {
-      "required" : [ "id" ],
+      "required" : [ "id", "name" ],
       "properties" : {
         "id" : {
           "type" : "integer",
