@@ -18,7 +18,6 @@
         "tags" : [ "Web" ],
         "summary" : "Get all categories",
         "description" : "Get all categories to be able to resolve categorizations in POIs and events.",
-        "operationId" : "getAlleCategories",
         "produces" : [ "application/json" ],
         "parameters" : [ ],
         "responses" : {
