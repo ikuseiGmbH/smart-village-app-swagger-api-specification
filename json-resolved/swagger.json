@@ -2421,7 +2421,7 @@
           "type" : "array",
           "example" : "",
           "items" : {
-            "$ref" : "#/definitions/Dates"
+            "$ref" : "#/definitions/Date"
           }
         },
         "description" : {
@@ -2611,18 +2611,6 @@
       },
       "description" : "Model for RepeatDuration. Specifies the period in which the regular(repeated) event takes place."
     },
-    "Dates" : {
-      "required" : [ "dates" ],
-      "properties" : {
-        "dates" : {
-          "type" : "array",
-          "items" : {
-            "$ref" : "#/definitions/Date"
-          }
-        }
-      },
-      "description" : "Model for Dates"
-    },
     "Date" : {
       "required" : [ "time_end", "time_start" ],
       "properties" : {
@@ -2700,7 +2688,7 @@
           "type" : "array",
           "example" : "",
           "items" : {
-            "$ref" : "#/definitions/ContentBlocks"
+            "$ref" : "#/definitions/ContentBlock"
           }
         },
         "characters_to_be_shown" : {
@@ -2744,7 +2732,7 @@
       },
       "description" : "Model for NewsItem"
     },
-    "ContentBlocks" : {
+    "ContentBlock" : {
       "required" : [ "body" ],
       "properties" : {
         "body" : {
