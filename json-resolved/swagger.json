@@ -2123,8 +2123,8 @@
           "type" : "string",
           "example" : "Beschreibungstext speziell für mobile Endgeräte, falls vorhanden"
         },
-        "openinghours" : {
-          "$ref" : "#/definitions/Openinghours"
+        "opening_hours" : {
+          "$ref" : "#/definitions/OpeningHours"
         },
         "operating_company" : {
           "$ref" : "#/definitions/OperatingCompany"
@@ -2261,7 +2261,7 @@
       },
       "description" : "Model for PointsOfInterest"
     },
-    "Openinghours" : {
+    "OpeningHours" : {
       "properties" : {
         "description" : {
           "type" : "string",
@@ -2318,7 +2318,7 @@
           "description" : "Only if the value is true the poi is openeed on the above specified weekday."
         }
       },
-      "description" : "Model for Openingtimedate. Specifies a day and the openinghours for the day."
+      "description" : "Model for Openingtimedate. Specifies a day and the openinghours for the day"
     },
     "Price" : {
       "required" : [ "description" ],
