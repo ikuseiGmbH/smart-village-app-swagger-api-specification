@@ -1996,29 +1996,13 @@
       "description" : "Model for Tour"
     },
     "Categories" : {
-      "required" : [ "id" ],
       "properties" : {
-        "id" : {
-          "type" : "integer",
-          "format" : "int32",
-          "example" : 1
-        },
-        "name" : {
-          "type" : "string",
-          "example" : "culture"
-        },
         "categories" : {
           "type" : "array",
           "description" : "Array of sub categories of a main catgeory.",
           "items" : {
             "$ref" : "#/definitions/Category"
           }
-        },
-        "tmb_id" : {
-          "type" : "integer",
-          "format" : "int32",
-          "example" : 17,
-          "description" : "id of the same category inside the tmb database"
         }
       },
       "description" : "Model for Categories"
