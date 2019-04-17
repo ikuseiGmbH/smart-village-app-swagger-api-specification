@@ -2612,12 +2612,29 @@
       "description" : "Model for RepeatDuration. Specifies the period in which the regular(repeated) event takes place."
     },
     "Dates" : {
-      "required" : [ "date_end", "date_start" ],
+      "required" : [ "dates" ],
+      "properties" : {
+        "dates" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Date"
+          }
+        }
+      },
+      "description" : "Model for Dates"
+    },
+    "Date" : {
+      "required" : [ "time_end", "time_start" ],
       "properties" : {
         "date_start" : {
           "type" : "string",
           "format" : "date",
           "example" : "2019-02-16"
+        },
+        "weekday" : {
+          "type" : "string",
+          "example" : "Monday",
+          "description" : "Optional property. If this event is a regular(repeat true) event, this property is required."
         },
         "date_end" : {
           "type" : "string",
@@ -2645,7 +2662,7 @@
           "description" : "If true times and dates are ignored and only the time description will be used."
         }
       },
-      "description" : "Model for Dates. Specifies the dates for an event."
+      "description" : "Model for one Dates. Specifies one date for an event."
     },
     "AccessibilityInformation" : {
       "required" : [ "description" ],
@@ -2752,7 +2769,7 @@
           "example" : "Döner, Sprudel, Graffiti: Hier steckt überall Fontane drin"
         }
       },
-      "description" : "Model for Blocks"
+      "description" : "Model for one Content Block"
     },
     "MediaContent" : {
       "required" : [ "caption" ],
