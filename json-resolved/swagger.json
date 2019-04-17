@@ -2076,12 +2076,12 @@
         },
         "created_at" : {
           "type" : "string",
-          "example" : "01.01.01",
+          "example" : "2017-07-31 13:16:19",
           "description" : "Creation Time of POI in the Database"
         },
         "updated_at" : {
           "type" : "string",
-          "example" : "01.01.01"
+          "example" : "2017-07-31 13:16:19"
         },
         "name" : {
           "type" : "string",
