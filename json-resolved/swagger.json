@@ -2629,11 +2629,11 @@
           "type" : "string",
           "example" : "Tim Test"
         },
-        "blocks" : {
+        "content_blocks" : {
           "type" : "array",
           "example" : "",
           "items" : {
-            "$ref" : "#/definitions/Blocks"
+            "$ref" : "#/definitions/ContentBlocks"
           }
         },
         "characters_to_be_shown" : {
@@ -2680,7 +2680,7 @@
       },
       "description" : "Model for NewsItem"
     },
-    "Blocks" : {
+    "ContentBlocks" : {
       "required" : [ "body" ],
       "properties" : {
         "body" : {
