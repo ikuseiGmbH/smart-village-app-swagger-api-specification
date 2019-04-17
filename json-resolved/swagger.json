@@ -1450,73 +1450,85 @@
                   } ],
                   "opening_hours" : {
                     "days" : [ {
-                      "weekday" : "wednesday",
+                      "name" : "wednesday",
                       "timefrom" : "11:00:00",
                       "timeto" : "20:00:00",
+                      "sort_order" : 1,
                       "open" : true
                     }, {
-                      "weekday" : "thursday",
+                      "name" : "thursday",
                       "timefrom" : "11:00:00",
                       "timeto" : "20:00:00",
+                      "sort_order" : 2,
                       "open" : true
                     }, {
-                      "weekday" : "friday",
+                      "name" : "friday",
                       "timefrom" : "11:00:00",
                       "timeto" : "20:00:00",
+                      "sort_order" : 3,
                       "open" : true
                     }, {
-                      "weekday" : "saturday",
+                      "name" : "saturday",
                       "timefrom" : "11:00:00",
                       "timeto" : "18:00:00",
+                      "sort_order" : 4,
                       "open" : true
                     }, {
-                      "weekday" : "saturday",
+                      "name" : "saturday",
                       "date_from" : "01.03.2017",
                       "date_to" : "01.09.2017",
                       "timefrom" : "11:00:00",
                       "timeto" : "19:00:00",
+                      "sort_order" : 5,
                       "open" : true
                     }, {
-                      "weekday" : "sunday",
+                      "name" : "sunday",
                       "date_from" : "01.03.",
                       "date_to" : "01.09.",
                       "timefrom" : "11:00:00",
                       "timeto" : "19:00:00",
+                      "sort_order" : 6,
                       "open" : true
                     }, {
-                      "weekday" : "holidays",
+                      "name" : "holidays",
                       "timefrom" : "11:00:00",
                       "timeto" : "19:00:00",
+                      "sort_order" : 7,
                       "open" : true
                     }, {
-                      "weekday" : "sylvester",
+                      "name" : "new_years_eve",
                       "date" : "",
                       "timefrom" : "10:00:00",
                       "timeto" : "13:00:00",
+                      "sort_order" : 11,
                       "open" : true
                     }, {
-                      "weekday" : "christmas_eve",
+                      "name" : "christmas_eve",
                       "date" : "",
                       "timefrom" : "10:00:00",
                       "timeto" : "13:00:00",
+                      "sort_order" : 8,
                       "open" : true
                     }, {
-                      "weekday" : "first_christmas_day",
+                      "name" : "first_christmas_day",
                       "date" : "",
                       "timefrom" : "10:00:00",
                       "timeto" : "13:00:00",
+                      "sort_order" : 9,
                       "open" : true
                     }, {
-                      "weekday" : "second_christmas_day",
+                      "name" : "second_christmas_day",
                       "date" : "",
                       "timefrom" : "10:00:00",
                       "timeto" : "13:00:00",
+                      "sort_order" : 10,
                       "open" : false
                     }, {
-                      "weekday" : "new_year",
+                      "name" : "new_year",
                       "date" : "",
                       "timefrom" : "10:00:00",
                       "timeto" : "13:00:00",
+                      "sort_order" : 12,
                       "open" : false
                     } ],
                     "additional_information" : "letzter Eintritt eine Stunde vor Schließung"
