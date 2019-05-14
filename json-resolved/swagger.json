@@ -1076,88 +1076,315 @@
             "description" : "OK",
             "examples" : {
               "application/json" : {
-                "news_item" : {
-                  "id" : 3,
-                  "author" : "Tim Test",
-                  "data_provider" : {
-                    "name" : "MAZ",
-                    "address" : {
-                      "addition" : "",
-                      "street" : "Musterstr. 123",
-                      "zip" : "14567",
-                      "city" : "Potsdam",
-                      "coordinates" : {
-                        "lat" : 52.345678,
-                        "lng" : 12.345678
-                      }
-                    },
-                    "contact" : {
-                      "first_name" : "max",
-                      "last_name" : "mustermann",
-                      "phone" : "+4903384860004",
-                      "fax" : "",
-                      "email" : "test@test.net",
-                      "url" : "http://www.flaeming.net"
-                    },
-                    "logo" : "image_link",
-                    "description" : ""
-                  },
-                  "original_article_url" : "http://www.maz-online.de/Lokales/Ostprignitz-Ruppin/Neuruppin/Fontane-Therme-Fontane-Doener-Fontane-Kuchen-Hier-steckt-ueberall-der-Dichter-aus-Brandenburg-drin",
-                  "type" : "news article",
-                  "full_version" : true,
-                  "published_at" : {
-                    "date" : "2019-03-30 04:39:53.000000",
-                    "timezone" : "+00:00"
-                  },
-                  "show_publish_date" : true,
+                "newsItem" : {
+                  "id" : "3",
+                  "author" : "Malissa Murphy",
+                  "charactersToBeShown" : "0",
+                  "newsType" : "News article or story",
+                  "publishedAt" : "0021-08-18 00:00:00 UTC",
+                  "showPublishDate" : false,
+                  "fullVersion" : true,
                   "address" : {
-                    "addition" : "",
-                    "city" : "Potsdam",
-                    "coordinates" : {
-                      "lat" : 52.345678,
-                      "lng" : 12.345678
+                    "addition" : "harum",
+                    "street" : "Turner Knolls",
+                    "zip" : "42041",
+                    "city" : "North Indiamouth",
+                    "geoLocation" : {
+                      "latitude" : 39.6467,
+                      "longitude" : 2.04683
                     }
                   },
-                  "blocks" : [ {
-                    "title" : "Döner, Sprudel, Graffiti: Hier steckt überall Fontane drin",
-                    "intro" : "<p>Zum 200. Geburtstag von Theodor Fontane haben wir uns mal umgesehen, was eigentlich alles nach dem märkischen Schriftsteller benannt ist – und sind nicht nur in Brandenburg fündig geworden.</p><p><!-- Methode uuid: \"5ff95920-4f0c-11e9-8de8-e140b6794626\"--></p>\n",
-                    "body" : "<p>Das Märkische hat Fontane berühmt gemacht, vor allem mit seinen „Wanderungen durch die <a href=\"http://multimedia.maz-online.de/wanderungen-durch-die-mark-brandenburg-auf-den-spuren-von-theodor-fontane\" target=\"_self\">Mark Brandenburg</a>“ und seinem Spätwerk „Der Stechlin“ (1897). Es ist die <a href=\"\" target=\"_self\">Heimat Fontanes</a>. In Neuruppin kam er als Sohn eines Apothekers hugenottischer Abstammung zur Welt. In der Fontane-Stadt gibt es eine Fontane-Apotheke, Fontane-Döner, Fontane-Festspiele, eine Fontane-Buchhandlung, die Fontane-Therme, den Kindergarten Fontaneknirpse, den Keglerverein Fontanespatzen und im Weinhaus am Markt den Wein „Edition Fontane“. Im Jahr von Fontanes 200. Geburtstag hat aber nicht nur Neuruppin Fontane-Spezialitäten zu bieten – <a href=\"\" target=\"_blank\">dabei ist das Label gar nicht so ohne weiteres erlaubt</a>. Unsere Fotostrecke zeigt, wo noch überall Fontane zu finden ist – von seiner Wirkstätte Brandenburg bis nach Asien: </p><p><object type=\"gallery\">23665163</object></p><p><strong>Haben Sie noch etwas entdeckt?</strong> Dann schreiben Sie uns eine Mail an <a href=\"mailto:online@maz-online.de\" target=\"_blank\">online@maz-online.de</a>!</p><p><strong>Das könnte Sie auch interessieren:</strong></p><p><ul>\n<li><p><a href=\"\" target=\"_blank\">Vorsicht bei Fontane-Werbung: Markenrechts-Verletzungen drohen</a></p></li>\n<li><p><a href=\"\" target=\"_blank\">MAZ-Special zum 200. Geburtstag: Alles zum Fontane-Jahr in Brandenburg</a></p></li>\n<li><p><a href=\"http://multimedia.maz-online.de/wanderungen-durch-die-mark-brandenburg-auf-den-spuren-von-theodor-fontane\" target=\"_blank\">Multimedia-Story: Auf Fontanes Spuren durch die Mark Brandenburg wandern</a></p></li>\n<li><p><a href=\"\" target=\"_blank\">Tolle Bustouren: Auf Entdeckungsreise mit Fontane</a></p></li>\n</ul></p><p><em>Von MAZonline</em></p>\n",
-                    "media_content" : [ {
-                      "type" : "image",
-                      "width" : "768",
-                      "height" : "513",
-                      "url" : "/var/storage/images/maz/brandenburg/fontane-therme-fontane-doener-fontane-kuchen-hier-steckt-ueberall-der-dichter-aus-brandenburg-drin/716717881-3-ger-DE/Doener-Sprudel-Graffiti-Hier-steckt-ueberall-Fontane-drin.jpg",
-                      "copyright" : "MAZ",
-                      "caption" : "<p>Vor allem in seiner Geburtsstadt Neuruppin ist vieles nach dem Schriftsteller benannt.</p>\n"
+                  "sourceUrl" : {
+                    "url" : "http://cruickshankpagac.biz/carrol.kautzer",
+                    "description" : "Enim qui magni tenetur."
+                  },
+                  "createdAt" : "2019-05-14 12:42:25 UTC",
+                  "updatedAt" : "2019-05-14 12:42:25 UTC",
+                  "contentBlocks" : [ {
+                    "title" : "pariatur",
+                    "intro" : "Non molestiae officia in.",
+                    "body" : "Aperiam labore dolores. Quae assumenda voluptate. Consectetur voluptatum quae.",
+                    "mediaContents" : [ {
+                      "sourceUrl" : {
+                        "url" : "http://langworth.biz/freddy",
+                        "description" : "Placeat consectetur illum consequuntur."
+                      },
+                      "captionText" : "In vero illo ut.",
+                      "copyright" : "Gertha Corwin",
+                      "contentType" : "image",
+                      "height" : 101,
+                      "width" : 652
                     }, {
-                      "type" : "image",
-                      "width" : "1024",
-                      "height" : "768",
-                      "url" : "/var/storage/images/maz/lokales/bildergalerien-region/2019/3/hier-steckt-ueberall-fontane-drin/6d480006-4fc8-11e9-a527-47c4c02d837a_27144752975/716717500-1-ger-DE/6d480006-4fc8-11e9-a527-47c4c02d837a_27144752975.jpg",
-                      "caption" : "<p>Seit 1998 trägt die Stadt Neuruppin offiziell den Beinamen „Fontanestadt“. Dem Schriftsteller zu Ehren steht auf dem Fontaneplatz das Fontanedenkmal, geschaffen 1907 vom Bildhauer Max Wiese. Die Skulptur ist inzwischen wohl schon über die Landesgrenzen hinaus bekannt...</p>\n",
-                      "copyright" : "Peter Geisler"
+                      "sourceUrl" : {
+                        "url" : "http://stokes.io/giuseppe",
+                        "description" : "Expedita sint quod in."
+                      },
+                      "captionText" : "Repudiandae libero et et.",
+                      "copyright" : "Lorna Becker",
+                      "contentType" : "image",
+                      "height" : 323,
+                      "width" : 564
                     }, {
-                      "type" : "image",
-                      "width" : "1024",
-                      "height" : "768",
-                      "url" : "/var/storage/images/maz/lokales/bildergalerien-region/2019/3/hier-steckt-ueberall-fontane-drin/35addb66-4fc8-11e9-a527-47c4c02d837a_27144753774/716717507-1-ger-DE/35addb66-4fc8-11e9-a527-47c4c02d837a_27144753774.jpg",
-                      "caption" : "<p>...aber kennen Sie schon die Fontane-Playmobil-Figur, die der Spielzeughersteller anlässlich des 200. Geburtstags des Literaten herausgebracht hat? Sie hält sogar ein Exemplar der „Wanderungen durch die Mark Brandenburg“ in der Hand.</p>\n",
-                      "copyright" : "Peter Geisler"
+                      "sourceUrl" : {
+                        "url" : "http://leannon.biz/estelle_hartmann",
+                        "description" : "Voluptas laborum qui magni."
+                      },
+                      "captionText" : "Dolorum dolor qui et.",
+                      "copyright" : "Kieth Zboncak V",
+                      "contentType" : "image",
+                      "height" : 769,
+                      "width" : 935
                     }, {
-                      "type" : "image",
-                      "width" : "1024",
-                      "height" : "768",
-                      "url" : "/var/storage/images/maz/lokales/bildergalerien-region/2019/3/hier-steckt-ueberall-fontane-drin/7a56528a-4fc7-11e9-a527-47c4c02d837a_27144756502/716717514-1-ger-DE/7a56528a-4fc7-11e9-a527-47c4c02d837a_27144756502.jpg",
-                      "caption" : "<p>Wer durch Neuruppin wandert, kommt ohenhin nicht an Fontane vorbei. Auf dem Schulplatz und am Rosengarten können Passanten 51 Ortsnamen lesen, die Fontane in seinen Werken beschrieben hat. Für einige Orte hat Franziska Zänker (Foto), die das Projekt künstlerisch umsetzt, zusätzliche Signets gestaltet. </p>\n",
-                      "copyright" : "Peter Geisler"
+                      "sourceUrl" : {
+                        "url" : "http://gleichner.com/zandra_witting",
+                        "description" : "Sunt ab itaque amet."
+                      },
+                      "captionText" : "Reiciendis molestiae doloribus ut.",
+                      "copyright" : "Douglass O'Hara",
+                      "contentType" : "image",
+                      "height" : 189,
+                      "width" : 659
                     }, {
-                      "type" : "image",
-                      "width" : "1024",
-                      "height" : "768",
-                      "url" : "/var/storage/images/maz/lokales/bildergalerien-region/2019/3/hier-steckt-ueberall-fontane-drin/df5054a2-57b4-11e9-ae81-420a4f59002d_05171314264/717420406-1-ger-DE/df5054a2-57b4-11e9-ae81-420a4f59002d_05171314264.jpg",
-                      "caption" : "<p>Wer die Neuruppiner Straßen quert, findet seit dem 5. April Fontane als Ampelmännchen vor.</p>\n",
-                      "copyright" : "Peter Geisler"
-                    } ]
+                      "sourceUrl" : {
+                        "url" : "http://botsford.co/rene",
+                        "description" : "Et amet cumque nam."
+                      },
+                      "captionText" : "Occaecati omnis atque ullam.",
+                      "copyright" : "Frederic Kuhic I",
+                      "contentType" : "image",
+                      "height" : 770,
+                      "width" : 195
+                    } ],
+                    "createdAt" : "2019-05-14 12:42:25 UTC",
+                    "updatedAt" : "2019-05-14 12:42:25 UTC"
+                  }, {
+                    "title" : "iure",
+                    "intro" : "Facere et est accusantium.",
+                    "body" : "Molestiae eius inventore. Numquam qui voluptatibus. Neque aut et.",
+                    "mediaContents" : [ {
+                      "sourceUrl" : {
+                        "url" : "http://shields.net/andre_smitham",
+                        "description" : "Provident vero et deserunt."
+                      },
+                      "captionText" : "Voluptates nobis iusto ullam.",
+                      "copyright" : "Krystina Kuhic",
+                      "contentType" : "image",
+                      "height" : 751,
+                      "width" : 601
+                    }, {
+                      "sourceUrl" : {
+                        "url" : "http://schowalter.co/woodrow.dietrich",
+                        "description" : "Earum odit tenetur beatae."
+                      },
+                      "captionText" : "Qui est in perspiciatis.",
+                      "copyright" : "Jeniffer Berge",
+                      "contentType" : "image",
+                      "height" : 401,
+                      "width" : 901
+                    }, {
+                      "sourceUrl" : {
+                        "url" : "http://rosenbaumkreiger.biz/fredia.dach",
+                        "description" : "Nulla ad quasi eaque."
+                      },
+                      "captionText" : "Molestias dolore harum repellendus.",
+                      "copyright" : "Mrs. Patricia Lehner",
+                      "contentType" : "image",
+                      "height" : 738,
+                      "width" : 783
+                    }, {
+                      "sourceUrl" : {
+                        "url" : "http://corwin.net/marivel.heel",
+                        "description" : "Aspernatur et ducimus ad."
+                      },
+                      "captionText" : "Laudantium molestias blanditiis reiciendis.",
+                      "copyright" : "Quinton Bogisich I",
+                      "contentType" : "image",
+                      "height" : 682,
+                      "width" : 765
+                    }, {
+                      "sourceUrl" : {
+                        "url" : "http://funk.info/frances_dickinson",
+                        "description" : "Necessitatibus eveniet nemo officia."
+                      },
+                      "captionText" : "Exercitationem explicabo eius repudiandae.",
+                      "copyright" : "Ms. Fidel Heaney",
+                      "contentType" : "image",
+                      "height" : 451,
+                      "width" : 409
+                    } ],
+                    "createdAt" : "2019-05-14 12:42:25 UTC",
+                    "updatedAt" : "2019-05-14 12:42:25 UTC"
+                  }, {
+                    "title" : "ratione",
+                    "intro" : "Sit aut quam molestias.",
+                    "body" : "Non aut repellat. Quibusdam aut sunt. Fugiat ad nam.",
+                    "mediaContents" : [ {
+                      "sourceUrl" : {
+                        "url" : "http://hyatt.org/darline.marks",
+                        "description" : "Consectetur et ipsam recusandae."
+                      },
+                      "captionText" : "Ad accusantium officiis ipsa.",
+                      "copyright" : "Deetta Marks",
+                      "contentType" : "image",
+                      "height" : 188,
+                      "width" : 183
+                    }, {
+                      "sourceUrl" : {
+                        "url" : "http://konopelski.com/yevette",
+                        "description" : "Occaecati sequi quae officiis."
+                      },
+                      "captionText" : "Deserunt voluptate neque soluta.",
+                      "copyright" : "Amado Macejkovic",
+                      "contentType" : "image",
+                      "height" : 896,
+                      "width" : 138
+                    }, {
+                      "sourceUrl" : {
+                        "url" : "http://hermandickinson.co/freddy",
+                        "description" : "Quis omnis earum natus."
+                      },
+                      "captionText" : "Neque itaque voluptatem nisi.",
+                      "copyright" : "Gene Metz II",
+                      "contentType" : "image",
+                      "height" : 125,
+                      "width" : 492
+                    }, {
+                      "sourceUrl" : {
+                        "url" : "http://buckridgesawayn.org/matt.homenick",
+                        "description" : "Qui est voluptatem aut."
+                      },
+                      "captionText" : "Est molestiae est culpa.",
+                      "copyright" : "Demetrius Rutherford",
+                      "contentType" : "image",
+                      "height" : 218,
+                      "width" : 704
+                    }, {
+                      "sourceUrl" : {
+                        "url" : "http://beier.net/pilar",
+                        "description" : "Et modi et numquam."
+                      },
+                      "captionText" : "Doloremque velit possimus temporibus.",
+                      "copyright" : "Derek Klocko",
+                      "contentType" : "image",
+                      "height" : 844,
+                      "width" : 297
+                    } ],
+                    "createdAt" : "2019-05-14 12:42:25 UTC",
+                    "updatedAt" : "2019-05-14 12:42:25 UTC"
+                  }, {
+                    "title" : "architecto",
+                    "intro" : "Asperiores et et laudantium.",
+                    "body" : "Quam est ullam. Saepe fugiat inventore. Error consequuntur deleniti.",
+                    "mediaContents" : [ {
+                      "sourceUrl" : {
+                        "url" : "http://stroman.co/jayson.auer",
+                        "description" : "Qui quod quidem ipsum."
+                      },
+                      "captionText" : "Quae id tenetur totam.",
+                      "copyright" : "Theo Russel",
+                      "contentType" : "image",
+                      "height" : 932,
+                      "width" : 526
+                    }, {
+                      "sourceUrl" : {
+                        "url" : "http://blandagerhold.info/magaly",
+                        "description" : "Minima veniam ipsam quae."
+                      },
+                      "captionText" : "Non sequi et inventore.",
+                      "copyright" : "Paul Hettinger",
+                      "contentType" : "image",
+                      "height" : 232,
+                      "width" : 940
+                    }, {
+                      "sourceUrl" : {
+                        "url" : "http://oconner.io/darla.auer",
+                        "description" : "Cupiditate eligendi dicta porro."
+                      },
+                      "captionText" : "Ut aliquam ut vero.",
+                      "copyright" : "Mrs. Wynona Haley",
+                      "contentType" : "image",
+                      "height" : 483,
+                      "width" : 586
+                    }, {
+                      "sourceUrl" : {
+                        "url" : "http://ullrich.info/kris_gleichner",
+                        "description" : "Quia aut qui et."
+                      },
+                      "captionText" : "Nesciunt qui at quia.",
+                      "copyright" : "Shanae Pollich",
+                      "contentType" : "image",
+                      "height" : 174,
+                      "width" : 822
+                    }, {
+                      "sourceUrl" : {
+                        "url" : "http://hudsonharvey.com/zita.barrows",
+                        "description" : "Ea voluptas dolorum quisquam."
+                      },
+                      "captionText" : "Quaerat in non est.",
+                      "copyright" : "Somer Halvorson DDS",
+                      "contentType" : "image",
+                      "height" : 743,
+                      "width" : 376
+                    } ],
+                    "createdAt" : "2019-05-14 12:42:25 UTC",
+                    "updatedAt" : "2019-05-14 12:42:25 UTC"
+                  }, {
+                    "title" : "provident",
+                    "intro" : "Hic accusantium quam rerum.",
+                    "body" : "Nihil ratione natus. Id non molestiae. Incidunt corrupti aperiam.",
+                    "mediaContents" : [ {
+                      "sourceUrl" : {
+                        "url" : "http://mitchellshields.org/emmett.bashirian",
+                        "description" : "Officia quod enim ex."
+                      },
+                      "captionText" : "Distinctio consectetur ipsum cupiditate.",
+                      "copyright" : "Aliza Kassulke",
+                      "contentType" : "image",
+                      "height" : 633,
+                      "width" : 459
+                    }, {
+                      "sourceUrl" : {
+                        "url" : "http://schummtromp.info/alene.feeney",
+                        "description" : "Nisi omnis harum voluptatem."
+                      },
+                      "captionText" : "Ratione aliquam dolores sint.",
+                      "copyright" : "Debbra Will DDS",
+                      "contentType" : "image",
+                      "height" : 345,
+                      "width" : 557
+                    }, {
+                      "sourceUrl" : {
+                        "url" : "http://pfeffer.com/fermin.jaskolski",
+                        "description" : "Neque necessitatibus repellat voluptas."
+                      },
+                      "captionText" : "Enim nesciunt delectus atque.",
+                      "copyright" : "Brice DuBuque",
+                      "contentType" : "image",
+                      "height" : 913,
+                      "width" : 843
+                    }, {
+                      "sourceUrl" : {
+                        "url" : "http://ko.co/bertha_leuschke",
+                        "description" : "Est qui et quas."
+                      },
+                      "captionText" : "Id possimus voluptas dolore.",
+                      "copyright" : "Zandra Little Sr.",
+                      "contentType" : "image",
+                      "height" : 715,
+                      "width" : 645
+                    }, {
+                      "sourceUrl" : {
+                        "url" : "http://flatleyfunk.info/lyman",
+                        "description" : "Nihil et corporis rerum."
+                      },
+                      "captionText" : "Tenetur suscipit impedit enim.",
+                      "copyright" : "Janyce Prosacco",
+                      "contentType" : "image",
+                      "height" : 328,
+                      "width" : 416
+                    } ],
+                    "createdAt" : "2019-05-14 12:42:25 UTC",
+                    "updatedAt" : "2019-05-14 12:42:25 UTC"
                   } ]
                 }
               }
